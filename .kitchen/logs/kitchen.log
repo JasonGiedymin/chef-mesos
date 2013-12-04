@@ -1,0 +1,243 @@
+I, [2013-12-02T23:39:52.445428 #6692]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-02T23:39:52.732796 #6692]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2013-12-02T23:39:52.733610 #6692]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2013-12-02T23:39:58.161246 #6692]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2013-12-02T23:39:58.161509 #6692]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2013-12-02T23:42:14.152503 #6692]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2013-12-02T23:42:15.336881 #6692] ERROR -- Kitchen: ------Exception-------
+E, [2013-12-02T23:42:15.336939 #6692] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-12-02T23:42:15.336977 #6692] ERROR -- Kitchen: Message: Failed to complete #converge action: [Berkshelf::BerksfileReadError]
+E, [2013-12-02T23:42:15.337023 #6692] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-12-02T23:42:15.337060 #6692] ERROR -- Kitchen: Class: Berkshelf::BerksfileReadError
+E, [2013-12-02T23:42:15.337105 #6692] ERROR -- Kitchen: Message: Berkshelf::BerksfileReadError
+E, [2013-12-02T23:42:15.337149 #6692] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-12-02T23:42:15.337182 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/cookbook_source.rb:237:in `rescue in from_path'
+E, [2013-12-02T23:42:15.337220 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/cookbook_source.rb:231:in `from_path'
+E, [2013-12-02T23:42:15.337254 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/cookbook_source.rb:136:in `cached_and_location'
+E, [2013-12-02T23:42:15.337287 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/cookbook_source.rb:117:in `initialize'
+E, [2013-12-02T23:42:15.337320 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/berksfile.rb:269:in `new'
+E, [2013-12-02T23:42:15.337354 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/berksfile.rb:269:in `add_source'
+E, [2013-12-02T23:42:15.337387 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/berksfile.rb:173:in `cookbook'
+E, [2013-12-02T23:42:15.337420 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/mixin/dsl_eval.rb:26:in `block (3 levels) in clean_room'
+E, [2013-12-02T23:42:15.337453 #6692] ERROR -- Kitchen: /Users/jason/programming/github/chef-mesos/Berksfile:4:in `block in dsl_eval_file'
+E, [2013-12-02T23:42:15.337487 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/mixin/dsl_eval.rb:54:in `eval'
+E, [2013-12-02T23:42:15.337524 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/mixin/dsl_eval.rb:54:in `block in dsl_eval_file'
+E, [2013-12-02T23:42:15.337558 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/mixin/dsl_eval.rb:44:in `instance_eval'
+E, [2013-12-02T23:42:15.337591 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/mixin/dsl_eval.rb:44:in `dsl_eval'
+E, [2013-12-02T23:42:15.337625 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/mixin/dsl_eval.rb:54:in `dsl_eval_file'
+E, [2013-12-02T23:42:15.337658 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/berkshelf-2.0.10/lib/berkshelf/berksfile.rb:12:in `from_file'
+E, [2013-12-02T23:42:15.337692 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/provisioner/chef/berkshelf.rb:54:in `block in resolve'
+E, [2013-12-02T23:42:15.337725 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/shell/basic.rb:19:in `mute'
+E, [2013-12-02T23:42:15.337768 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/provisioner/chef/berkshelf.rb:48:in `resolve'
+E, [2013-12-02T23:42:15.337822 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/provisioner/chef_base.rb:396:in `block in resolve_with_berkshelf'
+E, [2013-12-02T23:42:15.337865 #6692] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2013-12-02T23:42:15.337909 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/provisioner/chef_base.rb:395:in `resolve_with_berkshelf'
+E, [2013-12-02T23:42:15.337943 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/provisioner/chef_base.rb:268:in `prepare_cookbooks'
+E, [2013-12-02T23:42:15.337977 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/provisioner/chef_base.rb:180:in `create_chef_sandbox'
+E, [2013-12-02T23:42:15.338010 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/provisioner/chef_solo.rb:33:in `create_sandbox'
+E, [2013-12-02T23:42:15.338043 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:40:in `converge'
+E, [2013-12-02T23:42:15.338076 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/kitchen-vagrant-0.12.0/lib/kitchen/driver/vagrant.rb:72:in `converge'
+E, [2013-12-02T23:42:15.338110 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-02T23:42:15.338143 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-02T23:42:15.338180 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
+E, [2013-12-02T23:42:15.338215 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2013-12-02T23:42:15.338249 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-02T23:42:15.338282 #6692] ERROR -- Kitchen: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-02T23:42:15.338316 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-02T23:42:15.338349 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-02T23:42:15.338383 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2013-12-02T23:42:15.338415 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-02T23:42:15.338450 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-02T23:42:15.338486 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-02T23:42:15.338519 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:141:in `verify'
+E, [2013-12-02T23:42:15.338564 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:170:in `block in test'
+E, [2013-12-02T23:42:15.338598 #6692] ERROR -- Kitchen: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-02T23:42:15.338633 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:166:in `test'
+E, [2013-12-02T23:42:15.338674 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-02T23:42:15.338710 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-02T23:42:15.338744 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-02T23:42:15.338781 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-02T23:42:15.338817 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:146:in `block in test'
+E, [2013-12-02T23:42:15.338852 #6692] ERROR -- Kitchen: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-02T23:42:15.338887 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:137:in `test'
+E, [2013-12-02T23:42:15.338923 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-02T23:42:15.338968 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-02T23:42:15.339013 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-02T23:42:15.339048 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-02T23:42:15.339082 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-02T23:42:15.339120 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-02T23:42:15.339154 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-02T23:42:15.339199 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-02T23:42:15.339235 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `load'
+E, [2013-12-02T23:42:15.339281 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `<main>'
+E, [2013-12-02T23:42:15.339315 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-12-02T23:42:15.339350 #6692] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-12-02T23:42:15.339384 #6692] ERROR -- Kitchen: ----------------------
+I, [2013-12-02T23:50:30.433089 #6869]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-02T23:50:30.724548 #6869]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2013-12-02T23:50:30.725382 #6869]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2013-12-02T23:50:37.259725 #6869]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2013-12-02T23:50:37.259891 #6869]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2013-12-02T23:53:43.372069 #6869]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2013-12-02T23:56:41.919492 #6869]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1204>...
+I, [2013-12-02T23:56:41.922278 #6869]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1204>...
+I, [2013-12-02T23:56:41.924203 #6869]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2013-12-02T23:56:46.218866 #6869]  INFO -- Kitchen: -----> Kitchen is finished. (6m15.79s)
+I, [2013-12-03T21:42:22.124401 #729]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-03T21:42:22.638372 #729]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2013-12-03T21:46:37.024187 #729]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2013-12-03T21:51:54.826045 #729]  INFO -- Kitchen: -----> Kitchen is finished. (9m32.70s)
+I, [2013-12-03T21:53:56.893080 #1016]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-03T21:53:57.184143 #1016]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2013-12-03T21:53:57.184955 #1016]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2013-12-03T21:54:03.107550 #1016]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2013-12-03T21:54:03.107779 #1016]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2013-12-03T21:57:53.608611 #1016]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2013-12-03T22:02:13.628419 #1016]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1204>...
+I, [2013-12-03T22:02:25.844598 #1016]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1204>...
+E, [2013-12-03T22:02:27.820531 #1016] ERROR -- Kitchen: Verify failed on instance <default-ubuntu-1204>.
+I, [2013-12-03T22:34:50.529047 #1440]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-03T22:34:50.824458 #1440]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1204>...
+E, [2013-12-03T22:34:52.782405 #1440] ERROR -- Kitchen: Verify failed on instance <default-ubuntu-1204>.
+I, [2013-12-03T22:36:40.340298 #1456]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-03T22:36:40.631203 #1456]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1204>...
+E, [2013-12-03T22:36:42.576434 #1456] ERROR -- Kitchen: Verify failed on instance <default-ubuntu-1204>.
+I, [2013-12-03T22:41:21.107157 #1479]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-03T22:41:21.437635 #1479]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1204>...
+E, [2013-12-03T22:41:23.354266 #1479] ERROR -- Kitchen: Verify failed on instance <default-ubuntu-1204>.
+I, [2013-12-03T22:41:33.712661 #1490]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-03T22:41:34.036469 #1490]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2013-12-03T22:41:42.773760 #1490]  INFO -- Kitchen: -----> Kitchen is finished. (0m9.06s)
+I, [2013-12-03T23:46:24.410166 #2801]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-03T23:46:24.736789 #2801]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2013-12-03T23:49:27.456400 #2801]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2013-12-03T23:55:47.477271 #2801] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2013-12-03T23:56:57.219529 #2946]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-03T23:56:57.557149 #2946]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2013-12-03T23:57:03.919814 #2946]  INFO -- Kitchen: -----> Kitchen is finished. (0m6.70s)
+I, [2013-12-04T00:03:15.032842 #2976]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-04T00:03:15.366363 #2976]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1204>...
+E, [2013-12-04T00:04:36.021807 #2976] ERROR -- Kitchen: Setup failed on instance <default-ubuntu-1204>.
+I, [2013-12-04T00:09:15.181229 #3064]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-04T00:09:15.516626 #3064]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1204>...
+E, [2013-12-04T00:10:04.837928 #3064] ERROR -- Kitchen: ------Exception-------
+E, [2013-12-04T00:10:04.838007 #3064] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-12-04T00:10:04.838061 #3064] ERROR -- Kitchen: Message: Failed to complete #setup action: [exit]
+E, [2013-12-04T00:10:04.838110 #3064] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-12-04T00:10:04.838158 #3064] ERROR -- Kitchen: Class: SystemExit
+E, [2013-12-04T00:10:04.838206 #3064] ERROR -- Kitchen: Message: exit
+E, [2013-12-04T00:10:04.838253 #3064] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-12-04T00:10:04.838300 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:6:in `exit'
+E, [2013-12-04T00:10:04.838360 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-12-04T00:10:04.838411 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-12-04T00:10:04.838458 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-12-04T00:10:04.838510 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-12-04T00:10:04.838559 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:209:in `process'
+E, [2013-12-04T00:10:04.838607 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2013-12-04T00:10:04.838654 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-04T00:10:04.838701 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-04T00:10:04.838749 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:163:in `exec_with_exit'
+E, [2013-12-04T00:10:04.838796 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-12-04T00:10:04.838842 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2013-12-04T00:10:04.838889 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:55:in `block in setup'
+E, [2013-12-04T00:10:04.838941 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-12-04T00:10:04.838989 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:54:in `new'
+E, [2013-12-04T00:10:04.839036 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:54:in `setup'
+E, [2013-12-04T00:10:04.839082 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/kitchen-vagrant-0.12.0/lib/kitchen/driver/vagrant.rb:77:in `setup'
+E, [2013-12-04T00:10:04.839129 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-04T00:10:04.839182 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-04T00:10:04.839230 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
+E, [2013-12-04T00:10:04.839277 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2013-12-04T00:10:04.839324 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-04T00:10:04.839376 #3064] ERROR -- Kitchen: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-04T00:10:04.839424 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-04T00:10:04.839471 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-04T00:10:04.839518 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:260:in `setup_action'
+E, [2013-12-04T00:10:04.839584 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-04T00:10:04.839634 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-04T00:10:04.839680 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-04T00:10:04.839728 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:141:in `verify'
+E, [2013-12-04T00:10:04.839775 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-04T00:10:04.839827 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-04T00:10:04.839875 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-04T00:10:04.839922 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-04T00:10:04.839969 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:308:in `block in exec_action'
+E, [2013-12-04T00:10:04.840015 #3064] ERROR -- Kitchen: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-04T00:10:04.840079 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:305:in `exec_action'
+E, [2013-12-04T00:10:04.840119 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:108:in `block (2 levels) in <class:CLI>'
+E, [2013-12-04T00:10:04.840158 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-04T00:10:04.840197 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-04T00:10:04.840240 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-04T00:10:04.840279 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-04T00:10:04.840318 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-04T00:10:04.840356 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-04T00:10:04.840395 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-04T00:10:04.840433 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-04T00:10:04.840472 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `load'
+E, [2013-12-04T00:10:04.840510 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `<main>'
+E, [2013-12-04T00:10:04.840552 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-12-04T00:10:04.840593 #3064] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-12-04T00:10:04.840632 #3064] ERROR -- Kitchen: ----------------------
+I, [2013-12-04T00:10:14.622967 #3078]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-04T00:10:14.958138 #3078]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2013-12-04T00:10:14.958868 #3078]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2013-12-04T00:10:48.018764 #3078]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2013-12-04T00:10:48.019054 #3078]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+E, [2013-12-04T00:13:38.993673 #3078] ERROR -- Kitchen: ------Exception-------
+E, [2013-12-04T00:13:38.993724 #3078] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-12-04T00:13:38.993762 #3078] ERROR -- Kitchen: Message: Failed to complete #create action: [exit]
+E, [2013-12-04T00:13:38.993797 #3078] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-12-04T00:13:38.993832 #3078] ERROR -- Kitchen: Class: SystemExit
+E, [2013-12-04T00:13:38.993868 #3078] ERROR -- Kitchen: Message: exit
+E, [2013-12-04T00:13:38.993903 #3078] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-12-04T00:13:38.993939 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:6:in `exit'
+E, [2013-12-04T00:13:38.993975 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-12-04T00:13:38.994011 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/mixlib-shellout-1.2.0/lib/mixlib/shellout/unix.rb:60:in `call'
+E, [2013-12-04T00:13:38.994046 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/mixlib-shellout-1.2.0/lib/mixlib/shellout/unix.rb:60:in `select'
+E, [2013-12-04T00:13:38.994082 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/mixlib-shellout-1.2.0/lib/mixlib/shellout/unix.rb:60:in `run_command'
+E, [2013-12-04T00:13:38.994118 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/mixlib-shellout-1.2.0/lib/mixlib/shellout.rb:225:in `run_command'
+E, [2013-12-04T00:13:38.994154 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/shell_out.rb:65:in `run_command'
+E, [2013-12-04T00:13:38.994189 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/base.rb:158:in `run_command'
+E, [2013-12-04T00:13:38.994224 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/kitchen-vagrant-0.12.0/lib/kitchen/driver/vagrant.rb:112:in `run'
+E, [2013-12-04T00:13:38.994260 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/kitchen-vagrant-0.12.0/lib/kitchen/driver/vagrant.rb:65:in `create'
+E, [2013-12-04T00:13:38.994296 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-04T00:13:38.994332 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-04T00:13:38.994367 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:305:in `call'
+E, [2013-12-04T00:13:38.994403 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:305:in `block in synchronize_or_call'
+E, [2013-12-04T00:13:38.994439 #3078] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2013-12-04T00:13:38.994475 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:303:in `synchronize_or_call'
+E, [2013-12-04T00:13:38.994511 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-04T00:13:38.994547 #3078] ERROR -- Kitchen: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-04T00:13:38.994583 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-04T00:13:38.994620 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-04T00:13:38.994655 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:252:in `create_action'
+E, [2013-12-04T00:13:38.994701 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-04T00:13:38.994738 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-04T00:13:38.994774 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-04T00:13:38.994810 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:141:in `verify'
+E, [2013-12-04T00:13:38.994846 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:170:in `block in test'
+E, [2013-12-04T00:13:38.994882 #3078] ERROR -- Kitchen: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-04T00:13:38.994918 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:166:in `test'
+E, [2013-12-04T00:13:38.994953 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-04T00:13:38.994989 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-04T00:13:38.995025 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-04T00:13:38.995060 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-04T00:13:38.995096 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:146:in `block in test'
+E, [2013-12-04T00:13:38.995132 #3078] ERROR -- Kitchen: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-04T00:13:38.995168 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:137:in `test'
+E, [2013-12-04T00:13:38.995203 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-04T00:13:38.995239 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-04T00:13:38.995275 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-04T00:13:38.995311 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-04T00:13:38.995346 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-04T00:13:38.995381 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-04T00:13:38.995417 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-04T00:13:38.995452 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-04T00:13:38.995488 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `load'
+E, [2013-12-04T00:13:38.995523 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `<main>'
+E, [2013-12-04T00:13:38.995559 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-12-04T00:13:38.995594 #3078] ERROR -- Kitchen: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-12-04T00:13:38.995630 #3078] ERROR -- Kitchen: ----------------------
+I, [2013-12-04T00:13:42.633573 #3315]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-04T00:13:42.967973 #3315]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2013-12-04T00:13:42.972241 #3315]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.34s)

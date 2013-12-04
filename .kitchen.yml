@@ -1,0 +1,57 @@
+---
+driver_plugin: vagrant
+driver_config:
+  require_chef_omnibus: true
+  customize:
+    memory: 512
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-12.04
+    driver_config:
+      box: ubuntu-12.04
+      box_url: /Users/jason/programming/github/collective/base_boxes/precise64.box
+
+suites:
+  - name: default
+    run_list:
+      - recipe[chef-mesos::default]
+    attributes:
+
+# Test with custom location
+# suites:
+#   - name: default
+#     run_list:
+#       - recipe[chef-mesos::default]
+#     attributes:
+
+# Test with source
+# suites:
+#   - name: default
+#     run_list:
+#       - recipe[chef-mesos::default]
+#     attributes:
+
+# Test with deb package
+# suites:
+#   - name: default
+#     run_list:
+#       - recipe[chef-mesos::default]
+#     attributes:
+
+# Test with master only
+# suites:
+#   - name: default
+#     run_list:
+#       - recipe[chef-mesos::default]
+#     attributes:
+
+# Test with slave only
+# suites:
+#   - name: default
+#     run_list:
+#       - recipe[chef-mesos::default]
+#     attributes:
+
