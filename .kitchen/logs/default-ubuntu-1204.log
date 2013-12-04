@@ -2299,3 +2299,938 @@ E, [2013-12-04T00:13:38.992986 #3078] ERROR -- default-ubuntu-1204: /Users/jason
 E, [2013-12-04T00:13:38.993018 #3078] ERROR -- default-ubuntu-1204: ----------------------
 I, [2013-12-04T00:13:42.968073 #3315]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
 I, [2013-12-04T00:13:42.970570 #3315]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2013-12-04T07:45:22.435789 #506]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2013-12-04T07:45:23.711568 #506]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-12-04T07:45:26.491221 #506]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2013-12-04T07:45:26.836314 #506]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2013-12-04T07:45:26.836486 #506]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2013-12-04T07:45:26.866831 #506]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2013-12-04T07:45:26.893943 #506]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2013-12-04T07:45:26.943935 #506]  INFO -- default-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2013-12-04T07:45:27.046718 #506]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2013-12-04T07:45:27.072353 #506]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2013-12-04T07:45:43.543920 #506]  INFO -- default-ubuntu-1204: GuestAdditions versions on your host (4.3.4) and guest (4.2.0) do not match.
+I, [2013-12-04T07:45:44.379311 #506]  INFO -- default-ubuntu-1204: stdin: is not a tty
+Reading package lists...Building dependency tree...I, [2013-12-04T07:45:44.625117 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:45:44.625239 #506]  INFO -- default-ubuntu-1204: Reading state information...
+I, [2013-12-04T07:45:44.842334 #506]  INFO -- default-ubuntu-1204: The following extra packages will be installed:
+I, [2013-12-04T07:45:44.842433 #506]  INFO -- default-ubuntu-1204:   fakeroot linux-headers-3.2.0-23 make patch
+I, [2013-12-04T07:45:44.844055 #506]  INFO -- default-ubuntu-1204: Suggested packages:
+I, [2013-12-04T07:45:44.844135 #506]  INFO -- default-ubuntu-1204:   make-doc diffutils-doc
+I, [2013-12-04T07:45:44.847270 #506]  INFO -- default-ubuntu-1204: The following NEW packages will be installed:
+I, [2013-12-04T07:45:44.847355 #506]  INFO -- default-ubuntu-1204:   dkms fakeroot linux-headers-3.2.0-23 linux-headers-3.2.0-23-generic make
+I, [2013-12-04T07:45:44.847405 #506]  INFO -- default-ubuntu-1204:   patch
+I, [2013-12-04T07:45:44.989958 #506]  INFO -- default-ubuntu-1204: 0 upgraded, 6 newly installed, 0 to remove and 66 not upgraded.
+I, [2013-12-04T07:45:44.990068 #506]  INFO -- default-ubuntu-1204: Need to get 12.7 MB of archives.
+I, [2013-12-04T07:45:44.990134 #506]  INFO -- default-ubuntu-1204: After this operation, 68.5 MB of additional disk space will be used.
+I, [2013-12-04T07:45:44.990194 #506]  INFO -- default-ubuntu-1204: Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main make amd64 3.81-8.1ubuntu1 [118 kB]
+I, [2013-12-04T07:45:45.086317 #506]  INFO -- default-ubuntu-1204: Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main patch amd64 2.6.1-3 [80.2 kB]
+I, [2013-12-04T07:45:45.119147 #506]  INFO -- default-ubuntu-1204: Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/main dkms all 2.2.0.3-1ubuntu3 [73.1 kB]
+I, [2013-12-04T07:45:45.141725 #506]  INFO -- default-ubuntu-1204: Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/main fakeroot amd64 1.18.2-1 [87.2 kB]
+I, [2013-12-04T07:45:45.164952 #506]  INFO -- default-ubuntu-1204: Get:5 http://us.archive.ubuntu.com/ubuntu/ precise/main linux-headers-3.2.0-23 all 3.2.0-23.36 [11.4 MB]
+I, [2013-12-04T07:45:46.711490 #506]  INFO -- default-ubuntu-1204: Get:6 http://us.archive.ubuntu.com/ubuntu/ precise/main linux-headers-3.2.0-23-generic amd64 3.2.0-23.36 [947 kB]
+I, [2013-12-04T07:45:47.272055 #506]  INFO -- default-ubuntu-1204: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+I, [2013-12-04T07:45:47.286449 #506]  INFO -- default-ubuntu-1204: Fetched 12.7 MB in 2s (5,896 kB/s)
+I, [2013-12-04T07:45:47.330970 #506]  INFO -- default-ubuntu-1204: Selecting previously unselected package make.
+I, [2013-12-04T07:45:47.331052 #506]  INFO -- default-ubuntu-1204: (Reading database ... 
+I, [2013-12-04T07:45:47.526947 #506]  INFO -- default-ubuntu-1204: 51095 files and directories currently installed.)
+I, [2013-12-04T07:45:47.528551 #506]  INFO -- default-ubuntu-1204: Unpacking make (from .../make_3.81-8.1ubuntu1_amd64.deb) ...
+I, [2013-12-04T07:45:47.562441 #506]  INFO -- default-ubuntu-1204: Selecting previously unselected package patch.
+I, [2013-12-04T07:45:47.567140 #506]  INFO -- default-ubuntu-1204: Unpacking patch (from .../patch_2.6.1-3_amd64.deb) ...
+I, [2013-12-04T07:45:47.596436 #506]  INFO -- default-ubuntu-1204: Selecting previously unselected package dkms.
+I, [2013-12-04T07:45:47.601150 #506]  INFO -- default-ubuntu-1204: Unpacking dkms (from .../dkms_2.2.0.3-1ubuntu3_all.deb) ...
+I, [2013-12-04T07:45:47.648810 #506]  INFO -- default-ubuntu-1204: Selecting previously unselected package fakeroot.
+I, [2013-12-04T07:45:47.653476 #506]  INFO -- default-ubuntu-1204: Unpacking fakeroot (from .../fakeroot_1.18.2-1_amd64.deb) ...
+I, [2013-12-04T07:45:47.707369 #506]  INFO -- default-ubuntu-1204: Selecting previously unselected package linux-headers-3.2.0-23.
+I, [2013-12-04T07:45:47.712079 #506]  INFO -- default-ubuntu-1204: Unpacking linux-headers-3.2.0-23 (from .../linux-headers-3.2.0-23_3.2.0-23.36_all.deb) ...
+I, [2013-12-04T07:45:51.925517 #506]  INFO -- default-ubuntu-1204: Selecting previously unselected package linux-headers-3.2.0-23-generic.
+I, [2013-12-04T07:45:51.938120 #506]  INFO -- default-ubuntu-1204: Unpacking linux-headers-3.2.0-23-generic (from .../linux-headers-3.2.0-23-generic_3.2.0-23.36_amd64.deb) ...
+I, [2013-12-04T07:45:53.152530 #506]  INFO -- default-ubuntu-1204: Processing triggers for man-db ...
+I, [2013-12-04T07:45:53.638471 #506]  INFO -- default-ubuntu-1204: Setting up make (3.81-8.1ubuntu1) ...
+I, [2013-12-04T07:45:53.655793 #506]  INFO -- default-ubuntu-1204: Setting up patch (2.6.1-3) ...
+I, [2013-12-04T07:45:53.663486 #506]  INFO -- default-ubuntu-1204: Setting up dkms (2.2.0.3-1ubuntu3) ...
+I, [2013-12-04T07:45:53.705302 #506]  INFO -- default-ubuntu-1204: Setting up fakeroot (1.18.2-1) ...
+I, [2013-12-04T07:45:53.739222 #506]  INFO -- default-ubuntu-1204: update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode.
+I, [2013-12-04T07:45:53.764764 #506]  INFO -- default-ubuntu-1204: Setting up linux-headers-3.2.0-23 (3.2.0-23.36) ...
+I, [2013-12-04T07:45:53.770557 #506]  INFO -- default-ubuntu-1204: Setting up linux-headers-3.2.0-23-generic (3.2.0-23.36) ...
+I, [2013-12-04T07:45:53.781838 #506]  INFO -- default-ubuntu-1204: Examining /etc/kernel/header_postinst.d.
+I, [2013-12-04T07:45:53.782871 #506]  INFO -- default-ubuntu-1204: run-parts: executing /etc/kernel/header_postinst.d/dkms 3.2.0-23-generic /boot/vmlinuz-3.2.0-23-generic
+I, [2013-12-04T07:45:54.111280 #506]  INFO -- default-ubuntu-1204: Copy iso file /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+I, [2013-12-04T07:46:50.414377 #506]  INFO -- default-ubuntu-1204: stdin: is not a tty
+I, [2013-12-04T07:46:50.443336 #506]  INFO -- default-ubuntu-1204: mount: warning: /mnt seems to be mounted read-only.
+I, [2013-12-04T07:46:50.577443 #506]  INFO -- default-ubuntu-1204: Installing Virtualbox Guest Additions 4.3.4 - guest version is 4.2.0
+I, [2013-12-04T07:46:50.728050 #506]  INFO -- default-ubuntu-1204: stdin: is not a tty
+Verifying archive integrity...I, [2013-12-04T07:46:50.790646 #506]  INFO -- default-ubuntu-1204:  All good.
+Uncompressing VirtualBox 4.3.4 Guest Additions for Linux............I, [2013-12-04T07:46:50.879404 #506]  INFO -- default-ubuntu-1204: VirtualBox Guest Additions installer
+I, [2013-12-04T07:46:50.904105 #506]  INFO -- default-ubuntu-1204: Removing installed version 4.2.0 of VirtualBox Guest Additions...
+I, [2013-12-04T07:46:54.533338 #506]  INFO -- default-ubuntu-1204: Copying additional installer modules ...
+I, [2013-12-04T07:46:56.361071 #506]  INFO -- default-ubuntu-1204: Installing additional modules ...
+Removing existing VirtualBox DKMS kernel modulesI, [2013-12-04T07:46:56.542612 #506]  INFO -- default-ubuntu-1204:  ...done.
+I, [2013-12-04T07:46:56.542693 #506]  INFO -- default-ubuntu-1204: Removing existing VirtualBox non-DKMS kernel modules
+I, [2013-12-04T07:46:56.595973 #506]  INFO -- default-ubuntu-1204:  ...done.
+I, [2013-12-04T07:46:56.596060 #506]  INFO -- default-ubuntu-1204: Building the VirtualBox Guest Additions kernel modules
+I, [2013-12-04T07:47:30.412932 #506]  INFO -- default-ubuntu-1204:  ...done.
+I, [2013-12-04T07:47:30.413064 #506]  INFO -- default-ubuntu-1204: Doing non-kernel setup of the Guest Additions
+I, [2013-12-04T07:47:30.437766 #506]  INFO -- default-ubuntu-1204:  ...done.
+I, [2013-12-04T07:47:30.439097 #506]  INFO -- default-ubuntu-1204: You should restart your guest to make sure the new modules are actually used
+Installing the Window System driversI, [2013-12-04T07:47:30.581782 #506]  INFO -- default-ubuntu-1204:  ...fail!
+I, [2013-12-04T07:47:30.581855 #506]  INFO -- default-ubuntu-1204: (Could not find the X.Org or XFree86 Window System.)
+I, [2013-12-04T07:47:30.733308 #506]  INFO -- default-ubuntu-1204: An error occurred during installation of VirtualBox Guest Additions 4.3.4. Some functionality may not work as intended.
+I, [2013-12-04T07:47:30.856297 #506]  INFO -- default-ubuntu-1204: stdin: is not a tty
+[default] Waiting for machine to boot. This may take a few minutes...I, [2013-12-04T07:47:32.627684 #506]  INFO -- default-ubuntu-1204: [default] Machine booted and ready!
+I, [2013-12-04T07:47:32.650486 #506]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2013-12-04T07:47:34.213802 #506]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2013-12-04T07:47:35.109525 #506]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2013-12-04T07:47:35.119429 #506]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (2m12.67s).
+I, [2013-12-04T07:47:35.119702 #506]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2013-12-04T07:47:35.121691 #506]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2013-12-04T07:47:35.122675 #506]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2013-12-04T07:47:38.583188 #506]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2013-12-04T07:47:38.689363 #506]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2013-12-04T07:47:38.689461 #506]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2013-12-04T07:47:38.689517 #506]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2013-12-04T07:47:38.689554 #506]  INFO -- default-ubuntu-1204: trying wget...
+I, [2013-12-04T07:47:40.113618 #506]  INFO -- default-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2013-12-04T07:48:23.985669 #506]  INFO -- default-ubuntu-1204: Installing Chef 
+I, [2013-12-04T07:48:24.023283 #506]  INFO -- default-ubuntu-1204: Selecting previously unselected package chef.
+I, [2013-12-04T07:48:24.023388 #506]  INFO -- default-ubuntu-1204: (Reading database ... 
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%I, [2013-12-04T07:48:24.103341 #506]  INFO -- default-ubuntu-1204: (Reading database ... 100%(Reading database ... 73195 files and directories currently installed.)
+I, [2013-12-04T07:48:24.106024 #506]  INFO -- default-ubuntu-1204: Unpacking chef (from .../tmp.4SW0N40O/chef__amd64.deb) ...
+I, [2013-12-04T07:48:27.902799 #506]  INFO -- default-ubuntu-1204: Setting up chef (11.8.2-1.ubuntu.12.04) ...
+I, [2013-12-04T07:48:27.930565 #506]  INFO -- default-ubuntu-1204: Thank you for installing Chef!
+I, [2013-12-04T07:48:27.972499 #506]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+I, [2013-12-04T07:48:29.327634 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: Forking chef instance to converge...
+I, [2013-12-04T07:48:29.388499 #506]  INFO -- default-ubuntu-1204: Starting Chef Client, version 11.8.2[0m
+I, [2013-12-04T07:48:29.388580 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: *** Chef 11.8.2 ***
+I, [2013-12-04T07:48:29.388809 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:29.389089 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: Chef-client pid: 4203
+I, [2013-12-04T07:48:29.766812 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: Setting the run_list to ["recipe[chef-mesos::default]"] from JSON
+I, [2013-12-04T07:48:29.770144 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: Run List is [recipe[chef-mesos::default]]
+I, [2013-12-04T07:48:29.770208 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: Run List expands to [chef-mesos::default]
+I, [2013-12-04T07:48:29.770430 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: Starting Chef Run for default-ubuntu-1204
+I, [2013-12-04T07:48:29.770638 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: Running start handlers
+I, [2013-12-04T07:48:29.770682 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: Start handlers complete.
+I, [2013-12-04T07:48:29.796382 #506]  INFO -- default-ubuntu-1204: Compiling Cookbooks...[0m
+I, [2013-12-04T07:48:29.876580 #506]  INFO -- default-ubuntu-1204: Converging 12 resources[0m
+I, [2013-12-04T07:48:29.877035 #506]  INFO -- default-ubuntu-1204: Recipe: apt::default[0m
+I, [2013-12-04T07:48:29.877090 #506]  INFO -- default-ubuntu-1204:   * execute[apt-get-update] action run[0m
+I, [2013-12-04T07:48:29.877424 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:29+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)
+I, [2013-12-04T07:48:30.045585 #506]  INFO -- default-ubuntu-1204: Ign http://us.archive.ubuntu.com precise InRelease
+I, [2013-12-04T07:48:30.046009 #506]  INFO -- default-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates InRelease
+I, [2013-12-04T07:48:30.046087 #506]  INFO -- default-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports InRelease
+I, [2013-12-04T07:48:30.047043 #506]  INFO -- default-ubuntu-1204: Ign http://security.ubuntu.com precise-security InRelease
+I, [2013-12-04T07:48:30.067556 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise Release.gpg
+Get:1 http://us.archive.ubuntu.com precise-updates Release.gpg [198 B]I, [2013-12-04T07:48:30.068276 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:30.069570 #506]  INFO -- default-ubuntu-1204: Get:2 http://security.ubuntu.com precise-security Release.gpg [198 B]
+I, [2013-12-04T07:48:30.090891 #506]  INFO -- default-ubuntu-1204: Get:3 http://us.archive.ubuntu.com precise-backports Release.gpg [198 B]
+Hit http://us.archive.ubuntu.com precise ReleaseI, [2013-12-04T07:48:30.099749 #506]  INFO -- default-ubuntu-1204: 
+Get:4 http://security.ubuntu.com precise-security Release [49.6 kB]I, [2013-12-04T07:48:30.100408 #506]  INFO -- default-ubuntu-1204: 
+Get:5 http://us.archive.ubuntu.com precise-updates Release [49.6 kB]I, [2013-12-04T07:48:30.123597 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:30.170602 #506]  INFO -- default-ubuntu-1204: Get:6 http://security.ubuntu.com precise-security/main Sources [93.9 kB]
+Get:7 http://us.archive.ubuntu.com precise-backports Release [49.6 kB]I, [2013-12-04T07:48:30.176004 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main SourcesI, [2013-12-04T07:48:30.217645 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted SourcesI, [2013-12-04T07:48:30.218421 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe SourcesI, [2013-12-04T07:48:30.219076 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse SourcesI, [2013-12-04T07:48:30.219754 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main amd64 PackagesI, [2013-12-04T07:48:30.220433 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted amd64 PackagesI, [2013-12-04T07:48:30.221049 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe amd64 PackagesI, [2013-12-04T07:48:30.221626 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse amd64 PackagesI, [2013-12-04T07:48:30.222163 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main i386 PackagesI, [2013-12-04T07:48:30.222724 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:30.240815 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+I, [2013-12-04T07:48:30.240896 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+I, [2013-12-04T07:48:30.240936 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+I, [2013-12-04T07:48:30.242871 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+I, [2013-12-04T07:48:30.243225 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+I, [2013-12-04T07:48:30.255035 #506]  INFO -- default-ubuntu-1204: Get:8 http://security.ubuntu.com precise-security/restricted Sources [2494 B]
+Get:9 http://security.ubuntu.com precise-security/universe Sources [29.9 kB]I, [2013-12-04T07:48:30.257914 #506]  INFO -- default-ubuntu-1204: 
+Get:10 http://security.ubuntu.com precise-security/multiverse Sources [1797 B]I, [2013-12-04T07:48:30.261889 #506]  INFO -- default-ubuntu-1204: 
+Get:11 http://security.ubuntu.com precise-security/main amd64 Packages [347 kB]I, [2013-12-04T07:48:30.264092 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted TranslationIndexI, [2013-12-04T07:48:30.265674 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:30.266845 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+I, [2013-12-04T07:48:30.266920 #506]  INFO -- default-ubuntu-1204: Get:12 http://us.archive.ubuntu.com precise-updates/main Sources [427 kB]
+Get:13 http://security.ubuntu.com precise-security/restricted amd64 Packages [4627 B]I, [2013-12-04T07:48:30.386181 #506]  INFO -- default-ubuntu-1204: 
+Get:14 http://security.ubuntu.com precise-security/universe amd64 Packages [85.4 kB]I, [2013-12-04T07:48:30.386981 #506]  INFO -- default-ubuntu-1204: 
+Get:15 http://us.archive.ubuntu.com precise-updates/restricted Sources [7006 B]I, [2013-12-04T07:48:30.412706 #506]  INFO -- default-ubuntu-1204: 
+Get:16 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2439 B]I, [2013-12-04T07:48:30.421118 #506]  INFO -- default-ubuntu-1204: 
+Get:17 http://security.ubuntu.com precise-security/main i386 Packages [367 kB]I, [2013-12-04T07:48:30.421628 #506]  INFO -- default-ubuntu-1204: 
+Get:18 http://us.archive.ubuntu.com precise-updates/universe Sources [100 kB]I, [2013-12-04T07:48:30.430868 #506]  INFO -- default-ubuntu-1204: 
+Get:19 http://us.archive.ubuntu.com precise-updates/multiverse Sources [8812 B]I, [2013-12-04T07:48:30.449361 #506]  INFO -- default-ubuntu-1204: 
+Get:20 http://us.archive.ubuntu.com precise-updates/main amd64 Packages [715 kB]I, [2013-12-04T07:48:30.449960 #506]  INFO -- default-ubuntu-1204: 
+Get:21 http://security.ubuntu.com precise-security/restricted i386 Packages [4620 B]I, [2013-12-04T07:48:30.525152 #506]  INFO -- default-ubuntu-1204: 
+Get:22 http://security.ubuntu.com precise-security/universe i386 Packages [89.5 kB]I, [2013-12-04T07:48:30.525960 #506]  INFO -- default-ubuntu-1204: 
+Get:23 http://security.ubuntu.com precise-security/multiverse i386 Packages [2635 B]I, [2013-12-04T07:48:30.530785 #506]  INFO -- default-ubuntu-1204: 
+Get:24 http://security.ubuntu.com precise-security/main TranslationIndex [74 B]I, [2013-12-04T07:48:30.532335 #506]  INFO -- default-ubuntu-1204: 
+Get:25 http://security.ubuntu.com precise-security/multiverse TranslationIndex [72 B]I, [2013-12-04T07:48:30.536548 #506]  INFO -- default-ubuntu-1204: 
+Get:26 http://security.ubuntu.com precise-security/restricted TranslationIndex [72 B]I, [2013-12-04T07:48:30.538455 #506]  INFO -- default-ubuntu-1204: 
+Get:27 http://security.ubuntu.com precise-security/universe TranslationIndex [73 B]I, [2013-12-04T07:48:30.542591 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:30.574842 #506]  INFO -- default-ubuntu-1204: Get:28 http://security.ubuntu.com precise-security/main Translation-en [163 kB]
+Get:29 http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages [11.5 kB]I, [2013-12-04T07:48:30.614096 #506]  INFO -- default-ubuntu-1204: 
+Get:30 http://us.archive.ubuntu.com precise-updates/universe amd64 Packages [224 kB]I, [2013-12-04T07:48:30.615130 #506]  INFO -- default-ubuntu-1204: 
+Get:31 http://security.ubuntu.com precise-security/multiverse Translation-en [1299 B]I, [2013-12-04T07:48:30.615500 #506]  INFO -- default-ubuntu-1204: 
+Get:32 http://security.ubuntu.com precise-security/restricted Translation-en [1253 B]I, [2013-12-04T07:48:30.615812 #506]  INFO -- default-ubuntu-1204: 
+Get:33 http://security.ubuntu.com precise-security/universe Translation-en [54.3 kB]I, [2013-12-04T07:48:30.657931 #506]  INFO -- default-ubuntu-1204: 
+Get:34 http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages [14.2 kB]I, [2013-12-04T07:48:30.684101 #506]  INFO -- default-ubuntu-1204: 
+Get:35 http://us.archive.ubuntu.com precise-updates/main i386 Packages [737 kB]I, [2013-12-04T07:48:30.685649 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:31.002118 #506]  INFO -- default-ubuntu-1204: Get:36 http://us.archive.ubuntu.com precise-updates/restricted i386 Packages [11.4 kB]
+I, [2013-12-04T07:48:31.003391 #506]  INFO -- default-ubuntu-1204: Get:37 http://us.archive.ubuntu.com precise-updates/universe i386 Packages [228 kB]
+Get:38 http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages [14.4 kB]I, [2013-12-04T07:48:31.059948 #506]  INFO -- default-ubuntu-1204: 
+Get:39 http://us.archive.ubuntu.com precise-updates/main TranslationIndex [3564 B]I, [2013-12-04T07:48:31.066556 #506]  INFO -- default-ubuntu-1204: 
+Get:40 http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex [2605 B]I, [2013-12-04T07:48:31.067703 #506]  INFO -- default-ubuntu-1204: 
+Get:41 http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex [2461 B]I, [2013-12-04T07:48:31.068931 #506]  INFO -- default-ubuntu-1204: 
+Get:42 http://us.archive.ubuntu.com precise-updates/universe TranslationIndex [2850 B]I, [2013-12-04T07:48:31.069829 #506]  INFO -- default-ubuntu-1204: 
+Get:43 http://us.archive.ubuntu.com precise-backports/main Sources [4225 B]I, [2013-12-04T07:48:31.070978 #506]  INFO -- default-ubuntu-1204: 
+Get:44 http://us.archive.ubuntu.com precise-backports/restricted Sources [14 B]I, [2013-12-04T07:48:31.071714 #506]  INFO -- default-ubuntu-1204: 
+Get:45 http://us.archive.ubuntu.com precise-backports/universe Sources [36.4 kB]I, [2013-12-04T07:48:31.072388 #506]  INFO -- default-ubuntu-1204: 
+Get:46 http://us.archive.ubuntu.com precise-backports/multiverse Sources [5311 B]I, [2013-12-04T07:48:31.084898 #506]  INFO -- default-ubuntu-1204: 
+Get:47 http://us.archive.ubuntu.com precise-backports/main amd64 Packages [4800 B]I, [2013-12-04T07:48:31.087359 #506]  INFO -- default-ubuntu-1204: 
+Get:48 http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages [14 B]I, [2013-12-04T07:48:31.089291 #506]  INFO -- default-ubuntu-1204: 
+Get:49 http://us.archive.ubuntu.com precise-backports/universe amd64 Packages [37.9 kB]I, [2013-12-04T07:48:31.090103 #506]  INFO -- default-ubuntu-1204: 
+Get:50 http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages [5206 B]I, [2013-12-04T07:48:31.105119 #506]  INFO -- default-ubuntu-1204: 
+Get:51 http://us.archive.ubuntu.com precise-backports/main i386 Packages [4809 B]I, [2013-12-04T07:48:31.106044 #506]  INFO -- default-ubuntu-1204: 
+Get:52 http://us.archive.ubuntu.com precise-backports/restricted i386 Packages [14 B]I, [2013-12-04T07:48:31.107281 #506]  INFO -- default-ubuntu-1204: 
+Get:53 http://us.archive.ubuntu.com precise-backports/universe i386 Packages [37.7 kB]I, [2013-12-04T07:48:31.108059 #506]  INFO -- default-ubuntu-1204: 
+Get:54 http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages [5178 B]I, [2013-12-04T07:48:31.117889 #506]  INFO -- default-ubuntu-1204: 
+Get:55 http://us.archive.ubuntu.com precise-backports/main TranslationIndex [72 B]I, [2013-12-04T07:48:31.119369 #506]  INFO -- default-ubuntu-1204: 
+Get:56 http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex [72 B]I, [2013-12-04T07:48:31.119794 #506]  INFO -- default-ubuntu-1204: 
+Get:57 http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex [70 B]I, [2013-12-04T07:48:31.120128 #506]  INFO -- default-ubuntu-1204: 
+Get:58 http://us.archive.ubuntu.com precise-backports/universe TranslationIndex [73 B]I, [2013-12-04T07:48:31.120444 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main Translation-enI, [2013-12-04T07:48:31.127208 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-enI, [2013-12-04T07:48:31.127690 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:31.132502 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted Translation-en
+Hit http://us.archive.ubuntu.com precise/universe Translation-enI, [2013-12-04T07:48:31.133252 #506]  INFO -- default-ubuntu-1204: 
+Get:59 http://us.archive.ubuntu.com precise-updates/main Translation-en [322 kB]I, [2013-12-04T07:48:31.141157 #506]  INFO -- default-ubuntu-1204: 
+Get:60 http://us.archive.ubuntu.com precise-updates/multiverse Translation-en [8293 B]I, [2013-12-04T07:48:31.238479 #506]  INFO -- default-ubuntu-1204: 
+Get:61 http://us.archive.ubuntu.com precise-updates/restricted Translation-en [2637 B]I, [2013-12-04T07:48:31.239321 #506]  INFO -- default-ubuntu-1204: 
+Get:62 http://us.archive.ubuntu.com precise-updates/universe Translation-en [132 kB]I, [2013-12-04T07:48:31.240239 #506]  INFO -- default-ubuntu-1204: 
+Get:63 http://us.archive.ubuntu.com precise-backports/main Translation-en [4235 B]I, [2013-12-04T07:48:31.269153 #506]  INFO -- default-ubuntu-1204: 
+Get:64 http://us.archive.ubuntu.com precise-backports/multiverse Translation-en [4610 B]I, [2013-12-04T07:48:31.277731 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-enI, [2013-12-04T07:48:31.278202 #506]  INFO -- default-ubuntu-1204: 
+Get:65 http://us.archive.ubuntu.com precise-backports/universe Translation-en [27.6 kB]I, [2013-12-04T07:48:31.278648 #506]  INFO -- default-ubuntu-1204: 
+Fetched 4554 kB in 1s (2598 kB/s)I, [2013-12-04T07:48:31.698600 #506]  INFO -- default-ubuntu-1204: 
+Reading package lists...I, [2013-12-04T07:48:34.028607 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:34.064828 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:34+00:00] INFO: execute[apt-get-update] ran successfully
+I, [2013-12-04T07:48:34.065205 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:48:34.065267 #506]  INFO -- default-ubuntu-1204:     - execute apt-get update[0m
+I, [2013-12-04T07:48:34.065599 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:34.065666 #506]  INFO -- default-ubuntu-1204: [0m
+  * execute[apt-get update] action nothing[0mI, [2013-12-04T07:48:34.066227 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:34+00:00] INFO: Processing execute[apt-get update] action nothing (apt::default line 38)
+I, [2013-12-04T07:48:34.066546 #506]  INFO -- default-ubuntu-1204:  (skipped due to action :nothing)[0m
+  * execute[apt-get autoremove] action nothing[0mI, [2013-12-04T07:48:34.067156 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:34+00:00] INFO: Processing execute[apt-get autoremove] action nothing (apt::default line 46)
+I, [2013-12-04T07:48:34.067230 #506]  INFO -- default-ubuntu-1204:  (skipped due to action :nothing)[0m
+  * execute[apt-get autoclean] action nothing[0mI, [2013-12-04T07:48:34.067827 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:34+00:00] INFO: Processing execute[apt-get autoclean] action nothing (apt::default line 53)
+I, [2013-12-04T07:48:34.067879 #506]  INFO -- default-ubuntu-1204:  (skipped due to action :nothing)[0m
+  * package[update-notifier-common] action install[0mI, [2013-12-04T07:48:34.068404 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:34+00:00] INFO: Processing package[update-notifier-common] action install (apt::default line 60)
+I, [2013-12-04T07:48:35.685327 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:48:35.685430 #506]  INFO -- default-ubuntu-1204:     - install version 0.119ubuntu8.6 of package update-notifier-common[0m
+I, [2013-12-04T07:48:35.685487 #506]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T07:48:35.685863 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:35+00:00] INFO: package[update-notifier-common] sending run action to execute[apt-get-update] (immediate)
+I, [2013-12-04T07:48:35.685943 #506]  INFO -- default-ubuntu-1204:   * execute[apt-get-update] action run[0m
+I, [2013-12-04T07:48:35.686665 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:35+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)
+Ign http://security.ubuntu.com precise-security InReleaseI, [2013-12-04T07:48:35.821678 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.824456 #506]  INFO -- default-ubuntu-1204: Ign http://us.archive.ubuntu.com precise InRelease
+Ign http://us.archive.ubuntu.com precise-updates InReleaseI, [2013-12-04T07:48:35.825167 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.825495 #506]  INFO -- default-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports InRelease
+Hit http://security.ubuntu.com precise-security Release.gpgI, [2013-12-04T07:48:35.845656 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.847977 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise Release.gpg
+I, [2013-12-04T07:48:35.848064 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates Release.gpg
+Hit http://security.ubuntu.com precise-security ReleaseI, [2013-12-04T07:48:35.873673 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports Release.gpgI, [2013-12-04T07:48:35.874181 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.889689 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise Release
+I, [2013-12-04T07:48:35.903339 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/main Sources
+I, [2013-12-04T07:48:35.910403 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates Release
+Hit http://security.ubuntu.com precise-security/restricted SourcesI, [2013-12-04T07:48:35.925315 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.926044 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/universe Sources
+I, [2013-12-04T07:48:35.926125 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/multiverse Sources
+Hit http://security.ubuntu.com precise-security/main amd64 PackagesI, [2013-12-04T07:48:35.927321 #506]  INFO -- default-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted amd64 PackagesI, [2013-12-04T07:48:35.928203 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports ReleaseI, [2013-12-04T07:48:35.929493 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.933283 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main Sources
+I, [2013-12-04T07:48:35.933350 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted Sources
+I, [2013-12-04T07:48:35.934759 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe Sources
+I, [2013-12-04T07:48:35.934833 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse Sources
+I, [2013-12-04T07:48:35.935498 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main amd64 Packages
+I, [2013-12-04T07:48:35.944673 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/universe amd64 Packages
+Hit http://security.ubuntu.com precise-security/multiverse amd64 PackagesI, [2013-12-04T07:48:35.948055 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.948146 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/main i386 Packages
+I, [2013-12-04T07:48:35.948207 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/restricted i386 Packages
+I, [2013-12-04T07:48:35.948266 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/universe i386 Packages
+I, [2013-12-04T07:48:35.948307 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/multiverse i386 Packages
+I, [2013-12-04T07:48:35.948877 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/main TranslationIndex
+I, [2013-12-04T07:48:35.949523 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex
+I, [2013-12-04T07:48:35.950007 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
+I, [2013-12-04T07:48:35.950062 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe amd64 Packages
+I, [2013-12-04T07:48:35.950301 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+Hit http://us.archive.ubuntu.com precise/main i386 PackagesI, [2013-12-04T07:48:35.953862 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted i386 PackagesI, [2013-12-04T07:48:35.955024 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.955102 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+Hit http://us.archive.ubuntu.com precise/multiverse i386 PackagesI, [2013-12-04T07:48:35.955720 #506]  INFO -- default-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted TranslationIndexI, [2013-12-04T07:48:35.968299 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.968581 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/universe TranslationIndex
+I, [2013-12-04T07:48:35.973515 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+I, [2013-12-04T07:48:35.974164 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+I, [2013-12-04T07:48:35.974738 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+I, [2013-12-04T07:48:35.975697 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+I, [2013-12-04T07:48:35.975752 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main Sources
+I, [2013-12-04T07:48:35.975817 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/restricted Sources
+Hit http://us.archive.ubuntu.com precise-updates/universe SourcesI, [2013-12-04T07:48:35.976766 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:35.990153 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/main Translation-en
+I, [2013-12-04T07:48:35.995871 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/multiverse Sources
+I, [2013-12-04T07:48:35.995973 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main amd64 Packages
+I, [2013-12-04T07:48:35.996028 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages
+Hit http://us.archive.ubuntu.com precise-updates/universe amd64 PackagesI, [2013-12-04T07:48:36.001650 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 PackagesI, [2013-12-04T07:48:36.002383 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main i386 PackagesI, [2013-12-04T07:48:36.002963 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted i386 PackagesI, [2013-12-04T07:48:36.003571 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe i386 PackagesI, [2013-12-04T07:48:36.004096 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 PackagesI, [2013-12-04T07:48:36.004635 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:36.013440 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/multiverse Translation-en
+I, [2013-12-04T07:48:36.013553 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/restricted Translation-en
+I, [2013-12-04T07:48:36.020865 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndexI, [2013-12-04T07:48:36.022950 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndexI, [2013-12-04T07:48:36.023418 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndexI, [2013-12-04T07:48:36.024136 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main SourcesI, [2013-12-04T07:48:36.028434 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted SourcesI, [2013-12-04T07:48:36.028931 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe SourcesI, [2013-12-04T07:48:36.029376 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse SourcesI, [2013-12-04T07:48:36.029769 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main amd64 PackagesI, [2013-12-04T07:48:36.030146 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:36.030350 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
+I, [2013-12-04T07:48:36.035384 #506]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/universe Translation-en
+I, [2013-12-04T07:48:36.044989 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
+I, [2013-12-04T07:48:36.050026 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+I, [2013-12-04T07:48:36.050110 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/main i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/restricted i386 PackagesI, [2013-12-04T07:48:36.069996 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe i386 PackagesI, [2013-12-04T07:48:36.070447 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:36.070640 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndexI, [2013-12-04T07:48:36.070957 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:36.071167 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+I, [2013-12-04T07:48:36.071352 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
+I, [2013-12-04T07:48:36.071570 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
+Hit http://us.archive.ubuntu.com precise/main Translation-enI, [2013-12-04T07:48:36.071882 #506]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-enI, [2013-12-04T07:48:36.075472 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:36.075542 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted Translation-en
+I, [2013-12-04T07:48:36.087816 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe Translation-en
+I, [2013-12-04T07:48:36.087917 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main Translation-en
+I, [2013-12-04T07:48:36.087973 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+I, [2013-12-04T07:48:36.089795 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+I, [2013-12-04T07:48:36.089874 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/universe Translation-en
+I, [2013-12-04T07:48:36.090284 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
+I, [2013-12-04T07:48:36.090350 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+I, [2013-12-04T07:48:36.095711 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+I, [2013-12-04T07:48:36.110137 #506]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
+Reading package lists...I, [2013-12-04T07:48:38.570852 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:38.583553 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: execute[apt-get-update] ran successfully
+I, [2013-12-04T07:48:38.583792 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:48:38.584010 #506]  INFO -- default-ubuntu-1204:     - execute apt-get update[0m
+I, [2013-12-04T07:48:38.584055 #506]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T07:48:38.584257 #506]  INFO -- default-ubuntu-1204: 
+  * execute[apt-get-update-periodic] action run[0mI, [2013-12-04T07:48:38.584602 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: Processing execute[apt-get-update-periodic] action run (apt::default line 65)
+I, [2013-12-04T07:48:38.584815 #506]  INFO -- default-ubuntu-1204:  (skipped due to only_if)[0m
+  * directory[/var/cache/local] action create[0mI, [2013-12-04T07:48:38.585103 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: Processing directory[/var/cache/local] action create (apt::default line 76)
+I, [2013-12-04T07:48:38.585612 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: directory[/var/cache/local] created directory /var/cache/local
+I, [2013-12-04T07:48:38.585889 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:48:38.585937 #506]  INFO -- default-ubuntu-1204:     - create new directory /var/cache/local[0m
+I, [2013-12-04T07:48:38.586581 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: directory[/var/cache/local] owner changed to 0
+I, [2013-12-04T07:48:38.586856 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: directory[/var/cache/local] group changed to 0
+I, [2013-12-04T07:48:38.587052 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: directory[/var/cache/local] mode changed to 755
+I, [2013-12-04T07:48:38.587244 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:48:38.587316 #506]  INFO -- default-ubuntu-1204:     - change mode from '' to '0755'[0m[32m
+I, [2013-12-04T07:48:38.587354 #506]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'[0m[32m
+I, [2013-12-04T07:48:38.587390 #506]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'[0m
+I, [2013-12-04T07:48:38.587937 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:38.588014 #506]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T07:48:38.588224 #506]  INFO -- default-ubuntu-1204:   * directory[/var/cache/local/preseeding] action create[0m[2013-12-04T12:48:38+00:00] INFO: Processing directory[/var/cache/local/preseeding] action create (apt::default line 76)
+I, [2013-12-04T07:48:38.588724 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: directory[/var/cache/local/preseeding] created directory /var/cache/local/preseeding
+I, [2013-12-04T07:48:38.589017 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:48:38.589087 #506]  INFO -- default-ubuntu-1204:     - create new directory /var/cache/local/preseeding[0m
+I, [2013-12-04T07:48:38.589532 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: directory[/var/cache/local/preseeding] owner changed to 0
+I, [2013-12-04T07:48:38.589732 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: directory[/var/cache/local/preseeding] group changed to 0
+I, [2013-12-04T07:48:38.589962 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: directory[/var/cache/local/preseeding] mode changed to 755
+I, [2013-12-04T07:48:38.590176 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:48:38.590222 #506]  INFO -- default-ubuntu-1204:     - change mode from '' to '0755'[0m[32m
+I, [2013-12-04T07:48:38.590260 #506]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'[0m[32m
+I, [2013-12-04T07:48:38.590296 #506]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'[0m
+I, [2013-12-04T07:48:38.590563 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:48:38.590606 #506]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T07:48:38.590822 #506]  INFO -- default-ubuntu-1204: Recipe: chef-mesos::default[0m
+I, [2013-12-04T07:48:38.590900 #506]  INFO -- default-ubuntu-1204:   * package[default-jre-headless] action install[0m
+I, [2013-12-04T07:48:38.591107 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:48:38+00:00] INFO: Processing package[default-jre-headless] action install (chef-mesos::default line 12)
+I, [2013-12-04T07:49:21.932724 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:49:21.932818 #506]  INFO -- default-ubuntu-1204:     - install version 1:1.6-43ubuntu2 of package default-jre-headless[0m
+I, [2013-12-04T07:49:21.932860 #506]  INFO -- default-ubuntu-1204: [0m
+  * package[default-jre] action install[0mI, [2013-12-04T07:49:21.933377 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:49:21+00:00] INFO: Processing package[default-jre] action install (chef-mesos::default line 13)
+I, [2013-12-04T07:49:33.726197 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:49:33.726334 #506]  INFO -- default-ubuntu-1204:     - install version 1:1.6-43ubuntu2 of package default-jre[0m
+I, [2013-12-04T07:49:33.726403 #506]  INFO -- default-ubuntu-1204: [0m
+  * package[zookeeperd] action install[0mI, [2013-12-04T07:49:33.727200 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:49:33+00:00] INFO: Processing package[zookeeperd] action install (chef-mesos::default line 14)
+[32mI, [2013-12-04T07:49:37.955056 #506]  INFO -- default-ubuntu-1204: 
+    - install version 3.3.5+dfsg1-1ubuntu1 of package zookeeperd[0mI, [2013-12-04T07:49:37.955596 #506]  INFO -- default-ubuntu-1204: 
+[0mI, [2013-12-04T07:49:37.956125 #506]  INFO -- default-ubuntu-1204: 
+  * package[python-setuptools] action install[0m[2013-12-04T12:49:37+00:00] INFO: Processing package[python-setuptools] action install (chef-mesos::default line 15)I, [2013-12-04T07:49:37.956719 #506]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T07:49:40.055717 #506]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T07:49:40.055812 #506]  INFO -- default-ubuntu-1204:     - install version 0.6.24-1ubuntu1 of package python-setuptools[0m
+I, [2013-12-04T07:49:40.055857 #506]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T07:49:40.058039 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:49:40+00:00] INFO: Chef Run complete in 70.289207979 seconds
+I, [2013-12-04T07:49:40.058428 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:49:40+00:00] INFO: Running report handlers
+I, [2013-12-04T07:49:40.058880 #506]  INFO -- default-ubuntu-1204: [2013-12-04T12:49:40+00:00] INFO: Report handlers complete
+I, [2013-12-04T07:49:40.059126 #506]  INFO -- default-ubuntu-1204: Chef Client finished, 9 resources updated[0m
+I, [2013-12-04T07:49:40.172860 #506]  INFO -- default-ubuntu-1204: Finished converging <default-ubuntu-1204> (2m5.05s).
+I, [2013-12-04T08:23:16.473555 #753]  INFO -- default-ubuntu-1204: -----> Setting up <default-ubuntu-1204>...
+Fetching: thor-0.18.1.gemFetching: thor-0.18.1.gem (  5%)Fetching: thor-0.18.1.gem ( 17%)Fetching: thor-0.18.1.gem ( 19%)Fetching: thor-0.18.1.gem ( 22%)Fetching: thor-0.18.1.gem ( 33%)Fetching: thor-0.18.1.gem ( 38%)Fetching: thor-0.18.1.gem ( 42%)Fetching: thor-0.18.1.gem ( 45%)Fetching: thor-0.18.1.gem ( 48%)Fetching: thor-0.18.1.gem ( 52%)Fetching: thor-0.18.1.gem ( 57%)Fetching: thor-0.18.1.gem ( 64%)Fetching: thor-0.18.1.gem ( 68%)Fetching: thor-0.18.1.gem ( 69%)Fetching: thor-0.18.1.gem ( 71%)Fetching: thor-0.18.1.gem ( 75%)Fetching: thor-0.18.1.gem ( 76%)Fetching: thor-0.18.1.gem ( 81%)Fetching: thor-0.18.1.gem ( 83%)Fetching: thor-0.18.1.gem ( 85%)Fetching: thor-0.18.1.gem ( 88%)Fetching: thor-0.18.1.gem ( 97%)I, [2013-12-04T08:23:20.394285 #753]  INFO -- default-ubuntu-1204: Fetching: thor-0.18.1.gem (100%)Fetching: thor-0.18.1.gem (100%)
+Fetching: busser-0.6.0.gemFetching: busser-0.6.0.gem (  7%)Fetching: busser-0.6.0.gem ( 33%)Fetching: busser-0.6.0.gem ( 47%)Fetching: busser-0.6.0.gem ( 86%)Fetching: busser-0.6.0.gem ( 99%)I, [2013-12-04T08:23:20.674755 #753]  INFO -- default-ubuntu-1204: Fetching: busser-0.6.0.gem (100%)Fetching: busser-0.6.0.gem (100%)
+I, [2013-12-04T08:23:20.702837 #753]  INFO -- default-ubuntu-1204: Successfully installed thor-0.18.1
+I, [2013-12-04T08:23:20.702925 #753]  INFO -- default-ubuntu-1204: Successfully installed busser-0.6.0
+I, [2013-12-04T08:23:20.702964 #753]  INFO -- default-ubuntu-1204: 2 gems installed
+I, [2013-12-04T08:23:20.873897 #753]  INFO -- default-ubuntu-1204: -----> Setting up Busser
+I, [2013-12-04T08:23:20.874043 #753]  INFO -- default-ubuntu-1204: Creating BUSSER_ROOT in /tmp/busser
+I, [2013-12-04T08:23:20.874439 #753]  INFO -- default-ubuntu-1204: Creating busser binstub
+I, [2013-12-04T08:23:22.347900 #753]  INFO -- default-ubuntu-1204: Plugin bats installed (version 0.1.0)
+I, [2013-12-04T08:23:22.350833 #753]  INFO -- default-ubuntu-1204: -----> Running postinstall for bats plugin
+I, [2013-12-04T08:23:22.351723 #753]  INFO -- default-ubuntu-1204: [1m[32m      create[0m  /tmp/bats20131204-7234-1gyak2w/bats
+I, [2013-12-04T08:23:22.842481 #753]  INFO -- default-ubuntu-1204: [1m[32m      create[0m  /tmp/bats20131204-7234-1gyak2w/bats.tar.gz
+I, [2013-12-04T08:23:22.886214 #753]  INFO -- default-ubuntu-1204: Installed Bats to /tmp/busser/vendor/bats/bin/bats
+I, [2013-12-04T08:23:22.886731 #753]  INFO -- default-ubuntu-1204: [1m[32m      remove[0m  /tmp/bats20131204-7234-1gyak2w
+I, [2013-12-04T08:23:22.912768 #753]  INFO -- default-ubuntu-1204: Finished setting up <default-ubuntu-1204> (0m6.44s).
+I, [2013-12-04T08:23:22.912938 #753]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+I, [2013-12-04T08:23:23.225008 #753]  INFO -- default-ubuntu-1204: Suite path directory /tmp/busser/suites does not exist, skipping.
+I, [2013-12-04T08:23:23.378541 #753]  INFO -- default-ubuntu-1204: Uploading /tmp/busser/suites/bats/base.bats (mode=0644)
+I, [2013-12-04T08:23:23.808807 #753]  INFO -- default-ubuntu-1204: Uploading /tmp/busser/suites/bats/master_configs.bats (mode=0644)
+I, [2013-12-04T08:23:24.237749 #753]  INFO -- default-ubuntu-1204: Uploading /tmp/busser/suites/bats/slave_configs.bats (mode=0644)
+I, [2013-12-04T08:23:24.673129 #753]  INFO -- default-ubuntu-1204: -----> Running bats test suite
+[1G   the default file is present[K[77G1/3[2GI, [2013-12-04T08:23:24.773080 #753]  INFO -- default-ubuntu-1204: [1G[31;1m ✗ the default file is present[K
+I, [2013-12-04T08:23:24.773161 #753]  INFO -- default-ubuntu-1204: [0m[31;22m   (in test file /tmp/busser/suites/bats/base.bats, line 3)
+I, [2013-12-04T08:23:24.773206 #753]  INFO -- default-ubuntu-1204: [0m[1G   the master config is present[K[77G2/3[2G
+[1G[31;1m ✗ the master config is present[KI, [2013-12-04T08:23:24.796134 #753]  INFO -- default-ubuntu-1204: 
+[0m[31;22m   (in test file /tmp/busser/suites/bats/master_configs.bats, line 3)I, [2013-12-04T08:23:24.796467 #753]  INFO -- default-ubuntu-1204: 
+[0m[1G   the slave config is present[K[77G3/3[2GI, [2013-12-04T08:23:24.804394 #753]  INFO -- default-ubuntu-1204: [1G[31;1m ✗ the slave config is present[K
+I, [2013-12-04T08:23:24.804494 #753]  INFO -- default-ubuntu-1204: [0m[31;22m   (in test file /tmp/busser/suites/bats/slave_configs.bats, line 3)
+I, [2013-12-04T08:23:24.804564 #753]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T08:23:24.804623 #753]  INFO -- default-ubuntu-1204: 3 tests, 3 failures
+I, [2013-12-04T08:23:24.805018 #753]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:23:24.805335 #753]  INFO -- default-ubuntu-1204: Command [/tmp/busser/vendor/bats/bin/bats /tmp/busser/suites/bats] exit code was 1
+E, [2013-12-04T08:23:24.816129 #753] ERROR -- default-ubuntu-1204: Verify failed on instance <default-ubuntu-1204>.
+E, [2013-12-04T08:23:24.816250 #753] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2013-12-04T08:23:24.816289 #753] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2013-12-04T08:23:24.816324 #753] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; /tmp/busser/bin/busser test']
+E, [2013-12-04T08:23:24.816359 #753] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2013-12-04T08:23:24.816392 #753] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2013-12-04T08:23:24.816425 #753] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; /tmp/busser/bin/busser test']
+E, [2013-12-04T08:23:24.816458 #753] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2013-12-04T08:23:24.816490 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:110:in `rescue in run_remote'
+E, [2013-12-04T08:23:24.816522 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:106:in `run_remote'
+E, [2013-12-04T08:23:24.816556 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:62:in `block in verify'
+E, [2013-12-04T08:23:24.816589 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-12-04T08:23:24.816622 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:60:in `new'
+E, [2013-12-04T08:23:24.816674 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:60:in `verify'
+E, [2013-12-04T08:23:24.816709 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/kitchen-vagrant-0.12.0/lib/kitchen/driver/vagrant.rb:82:in `verify'
+E, [2013-12-04T08:23:24.816742 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-04T08:23:24.816775 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-04T08:23:24.816808 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
+E, [2013-12-04T08:23:24.816840 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2013-12-04T08:23:24.816874 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-04T08:23:24.816906 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-04T08:23:24.816940 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-04T08:23:24.816973 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-04T08:23:24.817005 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:264:in `verify_action'
+E, [2013-12-04T08:23:24.817038 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-04T08:23:24.817071 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-04T08:23:24.817104 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-04T08:23:24.817136 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:141:in `verify'
+E, [2013-12-04T08:23:24.817170 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-04T08:23:24.817203 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-04T08:23:24.817236 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-04T08:23:24.817269 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-04T08:23:24.817300 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:308:in `block in exec_action'
+E, [2013-12-04T08:23:24.817333 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-04T08:23:24.817366 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:305:in `exec_action'
+E, [2013-12-04T08:23:24.817398 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:108:in `block (2 levels) in <class:CLI>'
+E, [2013-12-04T08:23:24.817437 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-04T08:23:24.817471 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-04T08:23:24.817504 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-04T08:23:24.817537 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-04T08:23:24.817569 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-04T08:23:24.817602 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-04T08:23:24.817635 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-04T08:23:24.817668 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-04T08:23:24.817701 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `load'
+E, [2013-12-04T08:23:24.817734 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `<main>'
+E, [2013-12-04T08:23:24.817766 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-12-04T08:23:24.817799 #753] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-12-04T08:23:24.817833 #753] ERROR -- default-ubuntu-1204: ----------------------
+I, [2013-12-04T08:23:31.249187 #765]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2013-12-04T08:23:34.513862 #765]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2013-12-04T08:23:35.687367 #765]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2013-12-04T08:23:35.860732 #765]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2013-12-04T08:23:35.863994 #765]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m4.61s).
+I, [2013-12-04T08:23:47.626261 #802]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2013-12-04T08:23:48.231772 #802]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-12-04T08:23:49.560747 #802]  INFO -- default-ubuntu-1204: [default] Importing base box 'ubuntu-12.04'...
+Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2013-12-04T08:23:57.360407 #802]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2013-12-04T08:23:57.831453 #802]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2013-12-04T08:23:57.890738 #802]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2013-12-04T08:23:58.185995 #802]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2013-12-04T08:23:58.186145 #802]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2013-12-04T08:23:58.215690 #802]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2013-12-04T08:23:58.243422 #802]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2013-12-04T08:23:58.293874 #802]  INFO -- default-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2013-12-04T08:23:58.397324 #802]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2013-12-04T08:23:58.423887 #802]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2013-12-04T08:24:06.041486 #802]  INFO -- default-ubuntu-1204: GuestAdditions versions on your host (4.3.4) and guest (4.2.0) do not match.
+I, [2013-12-04T08:24:08.424081 #802]  INFO -- default-ubuntu-1204: stdin: is not a tty
+Reading package lists...Building dependency tree...I, [2013-12-04T08:24:10.732992 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:24:10.733080 #802]  INFO -- default-ubuntu-1204: Reading state information...
+I, [2013-12-04T08:24:10.953949 #802]  INFO -- default-ubuntu-1204: The following extra packages will be installed:
+I, [2013-12-04T08:24:10.954040 #802]  INFO -- default-ubuntu-1204:   fakeroot linux-headers-3.2.0-23 make patch
+I, [2013-12-04T08:24:10.956191 #802]  INFO -- default-ubuntu-1204: Suggested packages:
+I, [2013-12-04T08:24:10.956285 #802]  INFO -- default-ubuntu-1204:   make-doc diffutils-doc
+I, [2013-12-04T08:24:10.959704 #802]  INFO -- default-ubuntu-1204: The following NEW packages will be installed:
+I, [2013-12-04T08:24:10.959794 #802]  INFO -- default-ubuntu-1204:   dkms fakeroot linux-headers-3.2.0-23 linux-headers-3.2.0-23-generic make
+I, [2013-12-04T08:24:10.959835 #802]  INFO -- default-ubuntu-1204:   patch
+I, [2013-12-04T08:24:11.105037 #802]  INFO -- default-ubuntu-1204: 0 upgraded, 6 newly installed, 0 to remove and 66 not upgraded.
+I, [2013-12-04T08:24:11.105149 #802]  INFO -- default-ubuntu-1204: Need to get 12.7 MB of archives.
+I, [2013-12-04T08:24:11.105207 #802]  INFO -- default-ubuntu-1204: After this operation, 68.5 MB of additional disk space will be used.
+I, [2013-12-04T08:24:11.105274 #802]  INFO -- default-ubuntu-1204: Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main make amd64 3.81-8.1ubuntu1 [118 kB]
+I, [2013-12-04T08:24:11.198976 #802]  INFO -- default-ubuntu-1204: Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main patch amd64 2.6.1-3 [80.2 kB]
+I, [2013-12-04T08:24:11.229752 #802]  INFO -- default-ubuntu-1204: Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/main dkms all 2.2.0.3-1ubuntu3 [73.1 kB]
+I, [2013-12-04T08:24:11.251876 #802]  INFO -- default-ubuntu-1204: Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/main fakeroot amd64 1.18.2-1 [87.2 kB]
+I, [2013-12-04T08:24:11.274985 #802]  INFO -- default-ubuntu-1204: Get:5 http://us.archive.ubuntu.com/ubuntu/ precise/main linux-headers-3.2.0-23 all 3.2.0-23.36 [11.4 MB]
+I, [2013-12-04T08:24:12.663153 #802]  INFO -- default-ubuntu-1204: Get:6 http://us.archive.ubuntu.com/ubuntu/ precise/main linux-headers-3.2.0-23-generic amd64 3.2.0-23.36 [947 kB]
+I, [2013-12-04T08:24:12.937524 #802]  INFO -- default-ubuntu-1204: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+I, [2013-12-04T08:24:12.952437 #802]  INFO -- default-ubuntu-1204: Fetched 12.7 MB in 1s (7,186 kB/s)
+I, [2013-12-04T08:24:13.021740 #802]  INFO -- default-ubuntu-1204: Selecting previously unselected package make.
+I, [2013-12-04T08:24:13.021849 #802]  INFO -- default-ubuntu-1204: (Reading database ... 
+I, [2013-12-04T08:24:13.112116 #802]  INFO -- default-ubuntu-1204: 51095 files and directories currently installed.)
+I, [2013-12-04T08:24:13.113543 #802]  INFO -- default-ubuntu-1204: Unpacking make (from .../make_3.81-8.1ubuntu1_amd64.deb) ...
+I, [2013-12-04T08:24:13.144990 #802]  INFO -- default-ubuntu-1204: Selecting previously unselected package patch.
+I, [2013-12-04T08:24:13.149678 #802]  INFO -- default-ubuntu-1204: Unpacking patch (from .../patch_2.6.1-3_amd64.deb) ...
+I, [2013-12-04T08:24:13.179368 #802]  INFO -- default-ubuntu-1204: Selecting previously unselected package dkms.
+I, [2013-12-04T08:24:13.183935 #802]  INFO -- default-ubuntu-1204: Unpacking dkms (from .../dkms_2.2.0.3-1ubuntu3_all.deb) ...
+I, [2013-12-04T08:24:13.229475 #802]  INFO -- default-ubuntu-1204: Selecting previously unselected package fakeroot.
+I, [2013-12-04T08:24:13.233918 #802]  INFO -- default-ubuntu-1204: Unpacking fakeroot (from .../fakeroot_1.18.2-1_amd64.deb) ...
+I, [2013-12-04T08:24:13.292336 #802]  INFO -- default-ubuntu-1204: Selecting previously unselected package linux-headers-3.2.0-23.
+I, [2013-12-04T08:24:13.297772 #802]  INFO -- default-ubuntu-1204: Unpacking linux-headers-3.2.0-23 (from .../linux-headers-3.2.0-23_3.2.0-23.36_all.deb) ...
+I, [2013-12-04T08:24:17.574617 #802]  INFO -- default-ubuntu-1204: Selecting previously unselected package linux-headers-3.2.0-23-generic.
+I, [2013-12-04T08:24:17.587366 #802]  INFO -- default-ubuntu-1204: Unpacking linux-headers-3.2.0-23-generic (from .../linux-headers-3.2.0-23-generic_3.2.0-23.36_amd64.deb) ...
+I, [2013-12-04T08:24:18.879606 #802]  INFO -- default-ubuntu-1204: Processing triggers for man-db ...
+I, [2013-12-04T08:24:19.310739 #802]  INFO -- default-ubuntu-1204: Setting up make (3.81-8.1ubuntu1) ...
+I, [2013-12-04T08:24:19.329400 #802]  INFO -- default-ubuntu-1204: Setting up patch (2.6.1-3) ...
+I, [2013-12-04T08:24:19.337203 #802]  INFO -- default-ubuntu-1204: Setting up dkms (2.2.0.3-1ubuntu3) ...
+I, [2013-12-04T08:24:19.379824 #802]  INFO -- default-ubuntu-1204: Setting up fakeroot (1.18.2-1) ...
+I, [2013-12-04T08:24:19.401212 #802]  INFO -- default-ubuntu-1204: update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode.
+I, [2013-12-04T08:24:19.425395 #802]  INFO -- default-ubuntu-1204: Setting up linux-headers-3.2.0-23 (3.2.0-23.36) ...
+I, [2013-12-04T08:24:19.431458 #802]  INFO -- default-ubuntu-1204: Setting up linux-headers-3.2.0-23-generic (3.2.0-23.36) ...
+I, [2013-12-04T08:24:19.442125 #802]  INFO -- default-ubuntu-1204: Examining /etc/kernel/header_postinst.d.
+I, [2013-12-04T08:24:19.443188 #802]  INFO -- default-ubuntu-1204: run-parts: executing /etc/kernel/header_postinst.d/dkms 3.2.0-23-generic /boot/vmlinuz-3.2.0-23-generic
+I, [2013-12-04T08:24:19.648020 #802]  INFO -- default-ubuntu-1204: Copy iso file /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+I, [2013-12-04T08:25:14.607122 #802]  INFO -- default-ubuntu-1204: stdin: is not a tty
+I, [2013-12-04T08:25:14.636920 #802]  INFO -- default-ubuntu-1204: mount: warning: /mnt seems to be mounted read-only.
+I, [2013-12-04T08:25:14.771861 #802]  INFO -- default-ubuntu-1204: Installing Virtualbox Guest Additions 4.3.4 - guest version is 4.2.0
+I, [2013-12-04T08:25:14.896908 #802]  INFO -- default-ubuntu-1204: stdin: is not a tty
+Verifying archive integrity...I, [2013-12-04T08:25:14.953514 #802]  INFO -- default-ubuntu-1204:  All good.
+Uncompressing VirtualBox 4.3.4 Guest Additions for Linux............I, [2013-12-04T08:25:15.024566 #802]  INFO -- default-ubuntu-1204: VirtualBox Guest Additions installer
+I, [2013-12-04T08:25:15.045174 #802]  INFO -- default-ubuntu-1204: Removing installed version 4.2.0 of VirtualBox Guest Additions...
+I, [2013-12-04T08:25:16.809400 #802]  INFO -- default-ubuntu-1204: Copying additional installer modules ...
+I, [2013-12-04T08:25:18.595273 #802]  INFO -- default-ubuntu-1204: Installing additional modules ...
+Removing existing VirtualBox DKMS kernel modulesI, [2013-12-04T08:25:18.775194 #802]  INFO -- default-ubuntu-1204:  ...done.
+I, [2013-12-04T08:25:18.775283 #802]  INFO -- default-ubuntu-1204: Removing existing VirtualBox non-DKMS kernel modules
+I, [2013-12-04T08:25:18.828264 #802]  INFO -- default-ubuntu-1204:  ...done.
+I, [2013-12-04T08:25:18.828359 #802]  INFO -- default-ubuntu-1204: Building the VirtualBox Guest Additions kernel modules
+I, [2013-12-04T08:25:52.262785 #802]  INFO -- default-ubuntu-1204:  ...done.
+I, [2013-12-04T08:25:52.262922 #802]  INFO -- default-ubuntu-1204: Doing non-kernel setup of the Guest Additions
+I, [2013-12-04T08:25:52.277371 #802]  INFO -- default-ubuntu-1204:  ...done.
+I, [2013-12-04T08:25:52.280181 #802]  INFO -- default-ubuntu-1204: You should restart your guest to make sure the new modules are actually used
+Installing the Window System driversI, [2013-12-04T08:25:52.422147 #802]  INFO -- default-ubuntu-1204:  ...fail!
+I, [2013-12-04T08:25:52.422221 #802]  INFO -- default-ubuntu-1204: (Could not find the X.Org or XFree86 Window System.)
+I, [2013-12-04T08:25:52.573974 #802]  INFO -- default-ubuntu-1204: An error occurred during installation of VirtualBox Guest Additions 4.3.4. Some functionality may not work as intended.
+I, [2013-12-04T08:25:52.700191 #802]  INFO -- default-ubuntu-1204: stdin: is not a tty
+I, [2013-12-04T08:25:53.476389 #802]  INFO -- default-ubuntu-1204: [default] Waiting for machine to boot. This may take a few minutes...
+I, [2013-12-04T08:25:55.500346 #802]  INFO -- default-ubuntu-1204: [default] Machine booted and ready!
+I, [2013-12-04T08:25:55.564327 #802]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2013-12-04T08:25:57.077759 #802]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2013-12-04T08:25:57.980188 #802]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2013-12-04T08:25:57.983734 #802]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (2m10.35s).
+I, [2013-12-04T08:25:57.983898 #802]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2013-12-04T08:25:57.986715 #802]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2013-12-04T08:25:57.987456 #802]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2013-12-04T08:26:00.319218 #802]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2013-12-04T08:26:00.424529 #802]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2013-12-04T08:26:00.424636 #802]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2013-12-04T08:26:00.424676 #802]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2013-12-04T08:26:00.424719 #802]  INFO -- default-ubuntu-1204: trying wget...
+I, [2013-12-04T08:26:00.777284 #802]  INFO -- default-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2013-12-04T08:26:04.916979 #802]  INFO -- default-ubuntu-1204: Installing Chef 
+I, [2013-12-04T08:26:04.956032 #802]  INFO -- default-ubuntu-1204: Selecting previously unselected package chef.
+I, [2013-12-04T08:26:04.956141 #802]  INFO -- default-ubuntu-1204: (Reading database ... 
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%I, [2013-12-04T08:26:05.038097 #802]  INFO -- default-ubuntu-1204: (Reading database ... 100%(Reading database ... 73195 files and directories currently installed.)
+I, [2013-12-04T08:26:05.040479 #802]  INFO -- default-ubuntu-1204: Unpacking chef (from .../tmp.iyxlL3lp/chef__amd64.deb) ...
+I, [2013-12-04T08:26:08.790614 #802]  INFO -- default-ubuntu-1204: Setting up chef (11.8.2-1.ubuntu.12.04) ...
+I, [2013-12-04T08:26:08.824936 #802]  INFO -- default-ubuntu-1204: Thank you for installing Chef!
+I, [2013-12-04T08:26:08.872441 #802]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+I, [2013-12-04T08:26:10.240637 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: Forking chef instance to converge...
+I, [2013-12-04T08:26:10.312298 #802]  INFO -- default-ubuntu-1204: Starting Chef Client, version 11.8.2[0m
+I, [2013-12-04T08:26:10.312376 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: *** Chef 11.8.2 ***
+I, [2013-12-04T08:26:10.312414 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: Chef-client pid: 4221
+I, [2013-12-04T08:26:10.681730 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: Setting the run_list to ["recipe[chef-mesos::default]"] from JSON
+I, [2013-12-04T08:26:10.685085 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: Run List is [recipe[chef-mesos::default]]
+I, [2013-12-04T08:26:10.685159 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: Run List expands to [chef-mesos::default]
+I, [2013-12-04T08:26:10.685578 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: Starting Chef Run for default-ubuntu-1204
+I, [2013-12-04T08:26:10.685819 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: Running start handlers
+I, [2013-12-04T08:26:10.685867 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: Start handlers complete.
+I, [2013-12-04T08:26:10.711852 #802]  INFO -- default-ubuntu-1204: Compiling Cookbooks...[0m
+I, [2013-12-04T08:26:10.796408 #802]  INFO -- default-ubuntu-1204: Converging 12 resources[0m
+I, [2013-12-04T08:26:10.797012 #802]  INFO -- default-ubuntu-1204: Recipe: apt::default[0m
+I, [2013-12-04T08:26:10.797088 #802]  INFO -- default-ubuntu-1204:   * execute[apt-get-update] action run[0m
+I, [2013-12-04T08:26:10.797557 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:10+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)
+I, [2013-12-04T08:26:10.969924 #802]  INFO -- default-ubuntu-1204: Ign http://us.archive.ubuntu.com precise InRelease
+Ign http://us.archive.ubuntu.com precise-updates InReleaseI, [2013-12-04T08:26:10.971959 #802]  INFO -- default-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports InReleaseI, [2013-12-04T08:26:10.972310 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:10.994825 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise Release.gpg
+Get:1 http://us.archive.ubuntu.com precise-updates Release.gpg [198 B]I, [2013-12-04T08:26:10.995648 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:11.019161 #802]  INFO -- default-ubuntu-1204: Get:2 http://us.archive.ubuntu.com precise-backports Release.gpg [198 B]
+Hit http://us.archive.ubuntu.com precise ReleaseI, [2013-12-04T08:26:11.024635 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:11.049626 #802]  INFO -- default-ubuntu-1204: Get:3 http://us.archive.ubuntu.com precise-updates Release [49.6 kB]
+I, [2013-12-04T08:26:11.099992 #802]  INFO -- default-ubuntu-1204: Ign http://security.ubuntu.com precise-security InRelease
+I, [2013-12-04T08:26:11.121088 #802]  INFO -- default-ubuntu-1204: Get:4 http://us.archive.ubuntu.com precise-backports Release [49.6 kB]
+I, [2013-12-04T08:26:11.145775 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main Sources
+I, [2013-12-04T08:26:11.146602 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted Sources
+I, [2013-12-04T08:26:11.147232 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe Sources
+I, [2013-12-04T08:26:11.148730 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse Sources
+I, [2013-12-04T08:26:11.172170 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main amd64 Packages
+I, [2013-12-04T08:26:11.172433 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
+Hit http://us.archive.ubuntu.com precise/universe amd64 PackagesI, [2013-12-04T08:26:11.172778 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:11.172962 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+I, [2013-12-04T08:26:11.173158 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main i386 Packages
+I, [2013-12-04T08:26:11.173336 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+I, [2013-12-04T08:26:11.173526 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+I, [2013-12-04T08:26:11.173699 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com precise/main TranslationIndexI, [2013-12-04T08:26:11.173985 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:11.174152 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+I, [2013-12-04T08:26:11.174343 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+Hit http://us.archive.ubuntu.com precise/universe TranslationIndexI, [2013-12-04T08:26:11.186781 #802]  INFO -- default-ubuntu-1204: 
+Get:5 http://security.ubuntu.com precise-security Release.gpg [198 B]I, [2013-12-04T08:26:11.187217 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:11.191289 #802]  INFO -- default-ubuntu-1204: Get:6 http://us.archive.ubuntu.com precise-updates/main Sources [427 kB]
+I, [2013-12-04T08:26:11.279760 #802]  INFO -- default-ubuntu-1204: Get:7 http://security.ubuntu.com precise-security Release [49.6 kB]
+I, [2013-12-04T08:26:11.325831 #802]  INFO -- default-ubuntu-1204: Get:8 http://us.archive.ubuntu.com precise-updates/restricted Sources [7006 B]
+I, [2013-12-04T08:26:11.325919 #802]  INFO -- default-ubuntu-1204: Get:9 http://us.archive.ubuntu.com precise-updates/universe Sources [100 kB]
+Get:10 http://us.archive.ubuntu.com precise-updates/multiverse Sources [8812 B]I, [2013-12-04T08:26:11.345477 #802]  INFO -- default-ubuntu-1204: 
+Get:11 http://us.archive.ubuntu.com precise-updates/main amd64 Packages [715 kB]I, [2013-12-04T08:26:11.346666 #802]  INFO -- default-ubuntu-1204: 
+Get:12 http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages [11.5 kB]I, [2013-12-04T08:26:11.468777 #802]  INFO -- default-ubuntu-1204: 
+Get:13 http://us.archive.ubuntu.com precise-updates/universe amd64 Packages [224 kB]I, [2013-12-04T08:26:11.469985 #802]  INFO -- default-ubuntu-1204: 
+Get:14 http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages [14.2 kB]I, [2013-12-04T08:26:11.500407 #802]  INFO -- default-ubuntu-1204: 
+Get:15 http://us.archive.ubuntu.com precise-updates/main i386 Packages [737 kB]I, [2013-12-04T08:26:11.501947 #802]  INFO -- default-ubuntu-1204: 
+Get:16 http://us.archive.ubuntu.com precise-updates/restricted i386 Packages [11.4 kB]I, [2013-12-04T08:26:11.600774 #802]  INFO -- default-ubuntu-1204: 
+Get:17 http://us.archive.ubuntu.com precise-updates/universe i386 Packages [228 kB]I, [2013-12-04T08:26:11.603097 #802]  INFO -- default-ubuntu-1204: 
+Get:18 http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages [14.4 kB]I, [2013-12-04T08:26:11.632397 #802]  INFO -- default-ubuntu-1204: 
+Get:19 http://us.archive.ubuntu.com precise-updates/main TranslationIndex [3564 B]I, [2013-12-04T08:26:11.633450 #802]  INFO -- default-ubuntu-1204: 
+Get:20 http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex [2605 B]I, [2013-12-04T08:26:11.634367 #802]  INFO -- default-ubuntu-1204: 
+Get:21 http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex [2461 B]I, [2013-12-04T08:26:11.635975 #802]  INFO -- default-ubuntu-1204: 
+Get:22 http://us.archive.ubuntu.com precise-updates/universe TranslationIndex [2850 B]I, [2013-12-04T08:26:11.637465 #802]  INFO -- default-ubuntu-1204: 
+Get:23 http://us.archive.ubuntu.com precise-backports/main Sources [4225 B]I, [2013-12-04T08:26:11.638937 #802]  INFO -- default-ubuntu-1204: 
+Get:24 http://us.archive.ubuntu.com precise-backports/restricted Sources [14 B]I, [2013-12-04T08:26:11.640158 #802]  INFO -- default-ubuntu-1204: 
+Get:25 http://us.archive.ubuntu.com precise-backports/universe Sources [36.4 kB]I, [2013-12-04T08:26:11.641041 #802]  INFO -- default-ubuntu-1204: 
+Get:26 http://us.archive.ubuntu.com precise-backports/multiverse Sources [5311 B]I, [2013-12-04T08:26:11.643362 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:11.652089 #802]  INFO -- default-ubuntu-1204: Get:27 http://security.ubuntu.com precise-security/main Sources [93.9 kB]
+I, [2013-12-04T08:26:11.656491 #802]  INFO -- default-ubuntu-1204: Get:28 http://us.archive.ubuntu.com precise-backports/main amd64 Packages [4800 B]
+Get:29 http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages [14 B]I, [2013-12-04T08:26:11.659308 #802]  INFO -- default-ubuntu-1204: 
+Get:30 http://us.archive.ubuntu.com precise-backports/universe amd64 Packages [37.9 kB]I, [2013-12-04T08:26:11.661363 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:11.664535 #802]  INFO -- default-ubuntu-1204: Get:31 http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages [5206 B]
+Get:32 http://us.archive.ubuntu.com precise-backports/main i386 Packages [4809 B]I, [2013-12-04T08:26:11.666182 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:11.668120 #802]  INFO -- default-ubuntu-1204: Get:33 http://us.archive.ubuntu.com precise-backports/restricted i386 Packages [14 B]
+I, [2013-12-04T08:26:11.669419 #802]  INFO -- default-ubuntu-1204: Get:34 http://us.archive.ubuntu.com precise-backports/universe i386 Packages [37.7 kB]
+I, [2013-12-04T08:26:11.673256 #802]  INFO -- default-ubuntu-1204: Get:35 http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages [5178 B]
+I, [2013-12-04T08:26:11.673967 #802]  INFO -- default-ubuntu-1204: Get:36 http://us.archive.ubuntu.com precise-backports/main TranslationIndex [72 B]
+I, [2013-12-04T08:26:11.675245 #802]  INFO -- default-ubuntu-1204: Get:37 http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex [72 B]
+I, [2013-12-04T08:26:11.681044 #802]  INFO -- default-ubuntu-1204: Get:38 http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex [70 B]
+I, [2013-12-04T08:26:11.683676 #802]  INFO -- default-ubuntu-1204: Get:39 http://us.archive.ubuntu.com precise-backports/universe TranslationIndex [73 B]
+I, [2013-12-04T08:26:11.688443 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main Translation-en
+I, [2013-12-04T08:26:11.688946 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse Translation-en
+I, [2013-12-04T08:26:11.691234 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted Translation-en
+I, [2013-12-04T08:26:11.693378 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe Translation-en
+I, [2013-12-04T08:26:11.701615 #802]  INFO -- default-ubuntu-1204: Get:40 http://us.archive.ubuntu.com precise-updates/main Translation-en [322 kB]
+Get:41 http://us.archive.ubuntu.com precise-updates/multiverse Translation-en [8293 B]I, [2013-12-04T08:26:11.740281 #802]  INFO -- default-ubuntu-1204: 
+Get:42 http://us.archive.ubuntu.com precise-updates/restricted Translation-en [2637 B]I, [2013-12-04T08:26:11.741551 #802]  INFO -- default-ubuntu-1204: 
+Get:43 http://us.archive.ubuntu.com precise-updates/universe Translation-en [132 kB]I, [2013-12-04T08:26:11.742223 #802]  INFO -- default-ubuntu-1204: 
+Get:44 http://us.archive.ubuntu.com precise-backports/main Translation-en [4235 B]I, [2013-12-04T08:26:11.761617 #802]  INFO -- default-ubuntu-1204: 
+Get:45 http://us.archive.ubuntu.com precise-backports/multiverse Translation-en [4610 B]I, [2013-12-04T08:26:11.762537 #802]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-enI, [2013-12-04T08:26:11.763375 #802]  INFO -- default-ubuntu-1204: 
+Get:46 http://us.archive.ubuntu.com precise-backports/universe Translation-en [27.6 kB]I, [2013-12-04T08:26:11.763902 #802]  INFO -- default-ubuntu-1204: 
+Get:47 http://security.ubuntu.com precise-security/restricted Sources [2494 B]I, [2013-12-04T08:26:12.007009 #802]  INFO -- default-ubuntu-1204: 
+Get:48 http://security.ubuntu.com precise-security/universe Sources [29.9 kB]I, [2013-12-04T08:26:12.009863 #802]  INFO -- default-ubuntu-1204: 
+Get:49 http://security.ubuntu.com precise-security/multiverse Sources [1797 B]I, [2013-12-04T08:26:12.013498 #802]  INFO -- default-ubuntu-1204: 
+Get:50 http://security.ubuntu.com precise-security/main amd64 Packages [347 kB]I, [2013-12-04T08:26:12.014485 #802]  INFO -- default-ubuntu-1204: 
+Get:51 http://security.ubuntu.com precise-security/restricted amd64 Packages [4627 B]I, [2013-12-04T08:26:12.387294 #802]  INFO -- default-ubuntu-1204: 
+Get:52 http://security.ubuntu.com precise-security/universe amd64 Packages [85.4 kB]I, [2013-12-04T08:26:12.389856 #802]  INFO -- default-ubuntu-1204: 
+Get:53 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2439 B]I, [2013-12-04T08:26:12.464672 #802]  INFO -- default-ubuntu-1204: 
+Get:54 http://security.ubuntu.com precise-security/main i386 Packages [367 kB]I, [2013-12-04T08:26:12.466265 #802]  INFO -- default-ubuntu-1204: 
+Get:55 http://security.ubuntu.com precise-security/restricted i386 Packages [4620 B]I, [2013-12-04T08:26:12.716881 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:12.718030 #802]  INFO -- default-ubuntu-1204: Get:56 http://security.ubuntu.com precise-security/universe i386 Packages [89.5 kB]
+I, [2013-12-04T08:26:12.727430 #802]  INFO -- default-ubuntu-1204: Get:57 http://security.ubuntu.com precise-security/multiverse i386 Packages [2635 B]
+I, [2013-12-04T08:26:12.728050 #802]  INFO -- default-ubuntu-1204: Get:58 http://security.ubuntu.com precise-security/main TranslationIndex [74 B]
+I, [2013-12-04T08:26:12.728820 #802]  INFO -- default-ubuntu-1204: Get:59 http://security.ubuntu.com precise-security/multiverse TranslationIndex [72 B]
+I, [2013-12-04T08:26:12.729630 #802]  INFO -- default-ubuntu-1204: Get:60 http://security.ubuntu.com precise-security/restricted TranslationIndex [72 B]
+Get:61 http://security.ubuntu.com precise-security/universe TranslationIndex [73 B]I, [2013-12-04T08:26:12.730813 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:12.816374 #802]  INFO -- default-ubuntu-1204: Get:62 http://security.ubuntu.com precise-security/main Translation-en [163 kB]
+Get:63 http://security.ubuntu.com precise-security/multiverse Translation-en [1299 B]I, [2013-12-04T08:26:12.911710 #802]  INFO -- default-ubuntu-1204: 
+Get:64 http://security.ubuntu.com precise-security/restricted Translation-en [1253 B]I, [2013-12-04T08:26:12.912036 #802]  INFO -- default-ubuntu-1204: 
+Get:65 http://security.ubuntu.com precise-security/universe Translation-en [54.3 kB]I, [2013-12-04T08:26:13.001264 #802]  INFO -- default-ubuntu-1204: 
+Fetched 4554 kB in 2s (2114 kB/s)I, [2013-12-04T08:26:13.027568 #802]  INFO -- default-ubuntu-1204: 
+Reading package lists...I, [2013-12-04T08:26:15.287632 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:15.323917 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:15+00:00] INFO: execute[apt-get-update] ran successfully
+I, [2013-12-04T08:26:15.324203 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:15.324264 #802]  INFO -- default-ubuntu-1204:     - execute apt-get update[0m
+I, [2013-12-04T08:26:15.324501 #802]  INFO -- default-ubuntu-1204: 
+[0mI, [2013-12-04T08:26:15.324853 #802]  INFO -- default-ubuntu-1204: 
+  * execute[apt-get update] action nothing[0mI, [2013-12-04T08:26:15.325411 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:15+00:00] INFO: Processing execute[apt-get update] action nothing (apt::default line 38)
+I, [2013-12-04T08:26:15.325636 #802]  INFO -- default-ubuntu-1204:  (skipped due to action :nothing)[0m
+  * execute[apt-get autoremove] action nothing[0mI, [2013-12-04T08:26:15.326254 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:15+00:00] INFO: Processing execute[apt-get autoremove] action nothing (apt::default line 46)
+I, [2013-12-04T08:26:15.326581 #802]  INFO -- default-ubuntu-1204:  (skipped due to action :nothing)[0m
+  * execute[apt-get autoclean] action nothing[0mI, [2013-12-04T08:26:15.327023 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:15+00:00] INFO: Processing execute[apt-get autoclean] action nothing (apt::default line 53)
+I, [2013-12-04T08:26:15.327073 #802]  INFO -- default-ubuntu-1204:  (skipped due to action :nothing)[0m
+I, [2013-12-04T08:26:15.327371 #802]  INFO -- default-ubuntu-1204: 
+  * package[update-notifier-common] action install[0mI, [2013-12-04T08:26:15.327689 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:15+00:00] INFO: Processing package[update-notifier-common] action install (apt::default line 60)
+I, [2013-12-04T08:26:17.240722 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:17.240819 #802]  INFO -- default-ubuntu-1204:     - install version 0.119ubuntu8.6 of package update-notifier-common[0m
+I, [2013-12-04T08:26:17.241153 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.241217 #802]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T08:26:17.242319 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:17+00:00] INFO: package[update-notifier-common] sending run action to execute[apt-get-update] (immediate)
+  * execute[apt-get-update] action run[0mI, [2013-12-04T08:26:17.243503 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:17+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)
+I, [2013-12-04T08:26:17.384209 #802]  INFO -- default-ubuntu-1204: Ign http://us.archive.ubuntu.com precise InRelease
+Ign http://us.archive.ubuntu.com precise-updates InReleaseI, [2013-12-04T08:26:17.385093 #802]  INFO -- default-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports InReleaseI, [2013-12-04T08:26:17.385710 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.407354 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise Release.gpg
+I, [2013-12-04T08:26:17.407464 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates Release.gpg
+Hit http://us.archive.ubuntu.com precise-backports Release.gpgI, [2013-12-04T08:26:17.429561 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.433333 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise Release
+Hit http://us.archive.ubuntu.com precise-updates ReleaseI, [2013-12-04T08:26:17.457068 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.457137 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports Release
+Hit http://us.archive.ubuntu.com precise/main SourcesI, [2013-12-04T08:26:17.478881 #802]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted SourcesI, [2013-12-04T08:26:17.479458 #802]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe SourcesI, [2013-12-04T08:26:17.480034 #802]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse SourcesI, [2013-12-04T08:26:17.480369 #802]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main amd64 PackagesI, [2013-12-04T08:26:17.480657 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.499055 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
+I, [2013-12-04T08:26:17.499137 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe amd64 Packages
+I, [2013-12-04T08:26:17.499178 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+I, [2013-12-04T08:26:17.499404 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main i386 Packages
+I, [2013-12-04T08:26:17.500780 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+Hit http://us.archive.ubuntu.com precise/universe i386 PackagesI, [2013-12-04T08:26:17.518980 #802]  INFO -- default-ubuntu-1204: 
+Ign http://security.ubuntu.com precise-security InReleaseI, [2013-12-04T08:26:17.519552 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.521241 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+I, [2013-12-04T08:26:17.521361 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+I, [2013-12-04T08:26:17.522100 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+I, [2013-12-04T08:26:17.522595 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+I, [2013-12-04T08:26:17.523163 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+I, [2013-12-04T08:26:17.523242 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main Sources
+I, [2013-12-04T08:26:17.523348 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/restricted Sources
+I, [2013-12-04T08:26:17.523638 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.523688 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/universe Sources
+Hit http://us.archive.ubuntu.com precise-updates/multiverse SourcesI, [2013-12-04T08:26:17.538645 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.541333 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main amd64 Packages
+I, [2013-12-04T08:26:17.547524 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages
+I, [2013-12-04T08:26:17.547605 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/universe amd64 Packages
+I, [2013-12-04T08:26:17.547648 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages
+I, [2013-12-04T08:26:17.547983 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates/restricted i386 PackagesI, [2013-12-04T08:26:17.548875 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.548931 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/universe i386 Packages
+I, [2013-12-04T08:26:17.548971 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
+I, [2013-12-04T08:26:17.549212 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndexI, [2013-12-04T08:26:17.561955 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.570368 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex
+I, [2013-12-04T08:26:17.570911 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndex
+I, [2013-12-04T08:26:17.571356 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/main Sources
+I, [2013-12-04T08:26:17.571417 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/restricted Sources
+I, [2013-12-04T08:26:17.587875 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/universe Sources
+I, [2013-12-04T08:26:17.587997 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/multiverse Sources
+I, [2013-12-04T08:26:17.588074 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/main amd64 Packages
+I, [2013-12-04T08:26:17.588148 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
+I, [2013-12-04T08:26:17.588220 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
+I, [2013-12-04T08:26:17.591545 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+Hit http://us.archive.ubuntu.com precise-backports/main i386 PackagesI, [2013-12-04T08:26:17.611254 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.611391 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security Release.gpg
+I, [2013-12-04T08:26:17.611823 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
+I, [2013-12-04T08:26:17.611911 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/universe i386 Packages
+I, [2013-12-04T08:26:17.611990 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+I, [2013-12-04T08:26:17.614473 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndex
+I, [2013-12-04T08:26:17.615237 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndexI, [2013-12-04T08:26:17.616927 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.617324 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
+I, [2013-12-04T08:26:17.617409 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/main Translation-en
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-enI, [2013-12-04T08:26:17.631565 #802]  INFO -- default-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted Translation-enI, [2013-12-04T08:26:17.636455 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.636758 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe Translation-en
+I, [2013-12-04T08:26:17.636823 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main Translation-en
+I, [2013-12-04T08:26:17.636878 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+I, [2013-12-04T08:26:17.654513 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+I, [2013-12-04T08:26:17.654647 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/universe Translation-en
+I, [2013-12-04T08:26:17.655121 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
+I, [2013-12-04T08:26:17.655202 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+I, [2013-12-04T08:26:17.655258 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+I, [2013-12-04T08:26:17.659063 #802]  INFO -- default-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
+I, [2013-12-04T08:26:17.699345 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security Release
+I, [2013-12-04T08:26:17.797259 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/main Sources
+I, [2013-12-04T08:26:17.887454 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/restricted Sources
+I, [2013-12-04T08:26:17.887781 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/universe Sources
+I, [2013-12-04T08:26:17.887847 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/multiverse Sources
+Hit http://security.ubuntu.com precise-security/main amd64 PackagesI, [2013-12-04T08:26:17.889752 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.889836 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/restricted amd64 Packages
+I, [2013-12-04T08:26:17.979483 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/universe amd64 Packages
+I, [2013-12-04T08:26:17.979586 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/multiverse amd64 Packages
+I, [2013-12-04T08:26:17.979643 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/main i386 Packages
+I, [2013-12-04T08:26:17.979696 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/restricted i386 Packages
+Hit http://security.ubuntu.com precise-security/universe i386 PackagesI, [2013-12-04T08:26:17.980800 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:17.980879 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/multiverse i386 Packages
+I, [2013-12-04T08:26:17.981437 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/main TranslationIndex
+I, [2013-12-04T08:26:17.982019 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex
+I, [2013-12-04T08:26:18.069826 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/restricted TranslationIndex
+I, [2013-12-04T08:26:18.070153 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/universe TranslationIndex
+Hit http://security.ubuntu.com precise-security/main Translation-enI, [2013-12-04T08:26:18.156946 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:18.247573 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/multiverse Translation-en
+I, [2013-12-04T08:26:18.247679 #802]  INFO -- default-ubuntu-1204: Hit http://security.ubuntu.com precise-security/restricted Translation-en
+Hit http://security.ubuntu.com precise-security/universe Translation-enI, [2013-12-04T08:26:18.334421 #802]  INFO -- default-ubuntu-1204: 
+Reading package lists...I, [2013-12-04T08:26:20.846565 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:20.860650 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: execute[apt-get-update] ran successfully
+I, [2013-12-04T08:26:20.860973 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:20.861038 #802]  INFO -- default-ubuntu-1204:     - execute apt-get update[0m
+I, [2013-12-04T08:26:20.861093 #802]  INFO -- default-ubuntu-1204: [0m
+  * execute[apt-get-update-periodic] action run[0mI, [2013-12-04T08:26:20.861587 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: Processing execute[apt-get-update-periodic] action run (apt::default line 65)
+I, [2013-12-04T08:26:20.861905 #802]  INFO -- default-ubuntu-1204:  (skipped due to only_if)[0m
+  * directory[/var/cache/local] action create[0mI, [2013-12-04T08:26:20.862791 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: Processing directory[/var/cache/local] action create (apt::default line 76)
+I, [2013-12-04T08:26:20.864003 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: directory[/var/cache/local] created directory /var/cache/local
+I, [2013-12-04T08:26:20.864361 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:20.864427 #802]  INFO -- default-ubuntu-1204:     - create new directory /var/cache/local[0m
+I, [2013-12-04T08:26:20.865231 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: directory[/var/cache/local] owner changed to 0
+I, [2013-12-04T08:26:20.865532 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: directory[/var/cache/local] group changed to 0
+I, [2013-12-04T08:26:20.865931 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: directory[/var/cache/local] mode changed to 755
+I, [2013-12-04T08:26:20.866431 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:20.866530 #802]  INFO -- default-ubuntu-1204:     - change mode from '' to '0755'[0m[32m
+I, [2013-12-04T08:26:20.866617 #802]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'[0m
+I, [2013-12-04T08:26:20.867055 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:20.867121 #802]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'[0m
+I, [2013-12-04T08:26:20.867556 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:20.867626 #802]  INFO -- default-ubuntu-1204: [0m
+  * directory[/var/cache/local/preseeding] action create[0mI, [2013-12-04T08:26:20.868223 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: Processing directory[/var/cache/local/preseeding] action create (apt::default line 76)
+I, [2013-12-04T08:26:20.868599 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: directory[/var/cache/local/preseeding] created directory /var/cache/local/preseeding
+I, [2013-12-04T08:26:20.868916 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:20.868978 #802]  INFO -- default-ubuntu-1204:     - create new directory /var/cache/local/preseeding[0m
+I, [2013-12-04T08:26:20.869483 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: directory[/var/cache/local/preseeding] owner changed to 0
+I, [2013-12-04T08:26:20.869881 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: directory[/var/cache/local/preseeding] group changed to 0
+I, [2013-12-04T08:26:20.870275 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: directory[/var/cache/local/preseeding] mode changed to 755
+I, [2013-12-04T08:26:20.870338 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:20.870389 #802]  INFO -- default-ubuntu-1204:     - change mode from '' to '0755'[0m
+I, [2013-12-04T08:26:20.870832 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:20.870904 #802]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'[0m[32m
+I, [2013-12-04T08:26:20.870949 #802]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'[0m
+I, [2013-12-04T08:26:20.871334 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:20.871424 #802]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T08:26:20.871769 #802]  INFO -- default-ubuntu-1204: Recipe: chef-mesos::default[0m
+I, [2013-12-04T08:26:20.871829 #802]  INFO -- default-ubuntu-1204:   * package[default-jre-headless] action install[0m
+I, [2013-12-04T08:26:20.872183 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:20+00:00] INFO: Processing package[default-jre-headless] action install (chef-mesos::default line 12)
+I, [2013-12-04T08:26:31.512740 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:31.512822 #802]  INFO -- default-ubuntu-1204:     - install version 1:1.6-43ubuntu2 of package default-jre-headless[0m
+I, [2013-12-04T08:26:31.512872 #802]  INFO -- default-ubuntu-1204: [0m
+  * package[default-jre] action install[0mI, [2013-12-04T08:26:31.513436 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:31+00:00] INFO: Processing package[default-jre] action install (chef-mesos::default line 13)
+I, [2013-12-04T08:26:41.708364 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:41.708469 #802]  INFO -- default-ubuntu-1204:     - install version 1:1.6-43ubuntu2 of package default-jre[0m
+I, [2013-12-04T08:26:41.708778 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:41.708841 #802]  INFO -- default-ubuntu-1204: [0m
+  * package[zookeeperd] action install[0mI, [2013-12-04T08:26:41.709348 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:41+00:00] INFO: Processing package[zookeeperd] action install (chef-mesos::default line 14)
+I, [2013-12-04T08:26:44.688193 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:44.688280 #802]  INFO -- default-ubuntu-1204:     - install version 3.3.5+dfsg1-1ubuntu1 of package zookeeperd[0m
+I, [2013-12-04T08:26:44.688325 #802]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T08:26:44.688364 #802]  INFO -- default-ubuntu-1204:   * package[python-setuptools] action install[0m[2013-12-04T13:26:44+00:00] INFO: Processing package[python-setuptools] action install (chef-mesos::default line 15)
+I, [2013-12-04T08:26:46.660767 #802]  INFO -- default-ubuntu-1204: [32m
+I, [2013-12-04T08:26:46.660855 #802]  INFO -- default-ubuntu-1204:     - install version 0.6.24-1ubuntu1 of package python-setuptools[0m
+I, [2013-12-04T08:26:46.661135 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:46.661199 #802]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T08:26:46.661534 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:46+00:00] INFO: Chef Run complete in 35.976952931 seconds
+I, [2013-12-04T08:26:46.661820 #802]  INFO -- default-ubuntu-1204: [2013-12-04T13:26:46+00:00] INFO: Running report handlers
+[2013-12-04T13:26:46+00:00] INFO: Report handlers completeI, [2013-12-04T08:26:46.662255 #802]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:46.662477 #802]  INFO -- default-ubuntu-1204: Chef Client finished, 9 resources updated[0m
+I, [2013-12-04T08:26:46.773403 #802]  INFO -- default-ubuntu-1204: Finished converging <default-ubuntu-1204> (0m48.79s).
+I, [2013-12-04T08:26:52.183705 #960]  INFO -- default-ubuntu-1204: -----> Setting up <default-ubuntu-1204>...
+Fetching: thor-0.18.1.gemFetching: thor-0.18.1.gem (  5%)Fetching: thor-0.18.1.gem (  9%)Fetching: thor-0.18.1.gem ( 12%)Fetching: thor-0.18.1.gem ( 17%)Fetching: thor-0.18.1.gem ( 24%)Fetching: thor-0.18.1.gem ( 26%)Fetching: thor-0.18.1.gem ( 28%)Fetching: thor-0.18.1.gem ( 35%)Fetching: thor-0.18.1.gem ( 38%)Fetching: thor-0.18.1.gem ( 43%)Fetching: thor-0.18.1.gem ( 48%)Fetching: thor-0.18.1.gem ( 52%)Fetching: thor-0.18.1.gem ( 55%)Fetching: thor-0.18.1.gem ( 61%)Fetching: thor-0.18.1.gem ( 68%)Fetching: thor-0.18.1.gem ( 75%)Fetching: thor-0.18.1.gem ( 78%)Fetching: thor-0.18.1.gem ( 81%)Fetching: thor-0.18.1.gem ( 92%)Fetching: thor-0.18.1.gem (100%)Fetching: thor-0.18.1.gem (100%)I, [2013-12-04T08:26:56.682159 #960]  INFO -- default-ubuntu-1204: 
+Fetching: busser-0.6.0.gemFetching: busser-0.6.0.gem ( 27%)Fetching: busser-0.6.0.gem ( 33%)Fetching: busser-0.6.0.gem ( 60%)Fetching: busser-0.6.0.gem ( 93%)Fetching: busser-0.6.0.gem (100%)Fetching: busser-0.6.0.gem (100%)I, [2013-12-04T08:26:56.994710 #960]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:57.012344 #960]  INFO -- default-ubuntu-1204: Successfully installed thor-0.18.1
+I, [2013-12-04T08:26:57.012420 #960]  INFO -- default-ubuntu-1204: Successfully installed busser-0.6.0
+I, [2013-12-04T08:26:57.012467 #960]  INFO -- default-ubuntu-1204: 2 gems installed
+I, [2013-12-04T08:26:57.179684 #960]  INFO -- default-ubuntu-1204: -----> Setting up Busser
+I, [2013-12-04T08:26:57.179788 #960]  INFO -- default-ubuntu-1204: Creating BUSSER_ROOT in /tmp/busser
+       Creating busser binstubI, [2013-12-04T08:26:57.180152 #960]  INFO -- default-ubuntu-1204: 
+I, [2013-12-04T08:26:58.882581 #960]  INFO -- default-ubuntu-1204: Plugin bats installed (version 0.1.0)
+I, [2013-12-04T08:26:58.885455 #960]  INFO -- default-ubuntu-1204: -----> Running postinstall for bats plugin
+I, [2013-12-04T08:26:58.886422 #960]  INFO -- default-ubuntu-1204: [1m[32m      create[0m  /tmp/bats20131204-7412-9rd518/bats
+I, [2013-12-04T08:26:59.381350 #960]  INFO -- default-ubuntu-1204: [1m[32m      create[0m  /tmp/bats20131204-7412-9rd518/bats.tar.gz
+I, [2013-12-04T08:26:59.415487 #960]  INFO -- default-ubuntu-1204: Installed Bats to /tmp/busser/vendor/bats/bin/bats
+I, [2013-12-04T08:26:59.415798 #960]  INFO -- default-ubuntu-1204: [1m[32m      remove[0m  /tmp/bats20131204-7412-9rd518
+I, [2013-12-04T08:26:59.441456 #960]  INFO -- default-ubuntu-1204: Finished setting up <default-ubuntu-1204> (0m7.25s).
+I, [2013-12-04T08:26:59.441618 #960]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+I, [2013-12-04T08:26:59.756376 #960]  INFO -- default-ubuntu-1204: Suite path directory /tmp/busser/suites does not exist, skipping.
+I, [2013-12-04T08:26:59.911145 #960]  INFO -- default-ubuntu-1204: Uploading /tmp/busser/suites/bats/base.bats (mode=0644)
+I, [2013-12-04T08:27:00.338462 #960]  INFO -- default-ubuntu-1204: Uploading /tmp/busser/suites/bats/master_configs.bats (mode=0644)
+I, [2013-12-04T08:27:00.756034 #960]  INFO -- default-ubuntu-1204: Uploading /tmp/busser/suites/bats/slave_configs.bats (mode=0644)
+I, [2013-12-04T08:27:01.186452 #960]  INFO -- default-ubuntu-1204: -----> Running bats test suite
+[1G   the default file is present[K[77G1/3[2G[1G[31;1m ✗ the default file is present[KI, [2013-12-04T08:27:01.280499 #960]  INFO -- default-ubuntu-1204: 
+[0m[31;22m   (in test file /tmp/busser/suites/bats/base.bats, line 3)I, [2013-12-04T08:27:01.280818 #960]  INFO -- default-ubuntu-1204: 
+[0m[1G   the master config is present[K[77G2/3[2GI, [2013-12-04T08:27:01.304014 #960]  INFO -- default-ubuntu-1204: [1G[31;1m ✗ the master config is present[K
+I, [2013-12-04T08:27:01.304095 #960]  INFO -- default-ubuntu-1204: [0m[31;22m   (in test file /tmp/busser/suites/bats/master_configs.bats, line 3)
+I, [2013-12-04T08:27:01.304137 #960]  INFO -- default-ubuntu-1204: [0m[1G   the slave config is present[K[77G3/3[2G
+I, [2013-12-04T08:27:01.311457 #960]  INFO -- default-ubuntu-1204: [1G[31;1m ✗ the slave config is present[K
+I, [2013-12-04T08:27:01.311534 #960]  INFO -- default-ubuntu-1204: [0m[31;22m   (in test file /tmp/busser/suites/bats/slave_configs.bats, line 3)
+I, [2013-12-04T08:27:01.311574 #960]  INFO -- default-ubuntu-1204: [0m
+I, [2013-12-04T08:27:01.311610 #960]  INFO -- default-ubuntu-1204: 3 tests, 3 failures
+I, [2013-12-04T08:27:01.311880 #960]  INFO -- default-ubuntu-1204: Command [/tmp/busser/vendor/bats/bin/bats /tmp/busser/suites/bats] exit code was 1
+E, [2013-12-04T08:27:01.322556 #960] ERROR -- default-ubuntu-1204: Verify failed on instance <default-ubuntu-1204>.
+E, [2013-12-04T08:27:01.322672 #960] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2013-12-04T08:27:01.322711 #960] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2013-12-04T08:27:01.322744 #960] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; /tmp/busser/bin/busser test']
+E, [2013-12-04T08:27:01.322776 #960] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2013-12-04T08:27:01.322807 #960] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2013-12-04T08:27:01.322838 #960] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sh -c 'BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" ; export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE; /tmp/busser/bin/busser test']
+E, [2013-12-04T08:27:01.322869 #960] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2013-12-04T08:27:01.322900 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:110:in `rescue in run_remote'
+E, [2013-12-04T08:27:01.322935 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:106:in `run_remote'
+E, [2013-12-04T08:27:01.322967 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:62:in `block in verify'
+E, [2013-12-04T08:27:01.322997 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-12-04T08:27:01.323028 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:60:in `new'
+E, [2013-12-04T08:27:01.323060 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:60:in `verify'
+E, [2013-12-04T08:27:01.323090 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/kitchen-vagrant-0.12.0/lib/kitchen/driver/vagrant.rb:82:in `verify'
+E, [2013-12-04T08:27:01.323121 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-04T08:27:01.323152 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-04T08:27:01.323186 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
+E, [2013-12-04T08:27:01.323217 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2013-12-04T08:27:01.323248 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-04T08:27:01.323280 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-04T08:27:01.323310 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-04T08:27:01.323361 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-04T08:27:01.323394 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:264:in `verify_action'
+E, [2013-12-04T08:27:01.323425 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-04T08:27:01.323456 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-04T08:27:01.323489 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-04T08:27:01.323521 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:141:in `verify'
+E, [2013-12-04T08:27:01.323552 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-04T08:27:01.323583 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-04T08:27:01.323613 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-04T08:27:01.323643 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-04T08:27:01.323674 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:308:in `block in exec_action'
+E, [2013-12-04T08:27:01.323704 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-04T08:27:01.323735 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:305:in `exec_action'
+E, [2013-12-04T08:27:01.323769 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:108:in `block (2 levels) in <class:CLI>'
+E, [2013-12-04T08:27:01.323800 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-04T08:27:01.323831 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-04T08:27:01.323862 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-04T08:27:01.323892 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-04T08:27:01.323922 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-04T08:27:01.323953 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-04T08:27:01.323984 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-04T08:27:01.324015 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-04T08:27:01.324049 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `load'
+E, [2013-12-04T08:27:01.324081 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/kitchen:19:in `<main>'
+E, [2013-12-04T08:27:01.324118 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-12-04T08:27:01.324151 #960] ERROR -- default-ubuntu-1204: /Users/jason/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-12-04T08:27:01.324185 #960] ERROR -- default-ubuntu-1204: ----------------------
+I, [2013-12-04T08:27:27.324567 #973]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2013-12-04T08:27:30.743154 #973]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2013-12-04T08:27:31.855997 #973]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2013-12-04T08:27:32.054588 #973]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2013-12-04T08:27:32.059079 #973]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m4.73s).
