@@ -19,6 +19,9 @@ suites:
     run_list:
       - recipe[chef-mesos::default]
     attributes:
+      mesos:
+        install:
+          from_package: true
 
 # Test with custom location
 # suites:
