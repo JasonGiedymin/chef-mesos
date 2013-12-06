@@ -5,11 +5,12 @@ case node[:platform]
     default['mesos']['package_format'] = 'rpm'
 end
 
+default['mesos']['crap'] = "yup"
 # misc attribs
 default['mesos']['install']['force']         = true # force the install
 
 # packaging
-default['mesos']['install']['method']        = pkg # {src|pkg|pkgsrc}
+default['mesos']['install']['type']        = "pkg" # {src|pkg|pkgsrc}
 
 default['mesos']['install']['pkg_ver']       = '0.14.2'
 default['mesos']['install']['pkg_arch']      = 'amd64' # right now that is all you get
