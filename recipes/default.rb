@@ -9,27 +9,37 @@
 
 include_recipe 'apt::default'
 
+package 'curl'
+package 'wget'
 package 'g++'
 package 'gcc'
-package 'default-jre-headless'
-package 'default-jre'
-package 'zookeeper-bin'
-package 'zookeeperd'
-package 'python-setuptools'
-package 'python-dev'
-package 'libcurl4-openssl-dev'
-package 'libunwind7-dev'
-package 'libsasl2-2'
-package 'libsasl2-dev'
-package 'libcurl3'
 
-# service 'mesos-master' do
-#   action [:enable, :stop]
-# end
-
-# service 'mesos-slave' do
-#   action [:enable, :stop]
-# end
+case node['platform_family']
+when 'debian ubuntu'
+  package 'default-jre-headless'
+  package 'default-jre'
+  package 'zookeeper-bin'
+  package 'zookeeperd'
+  package 'python-setuptools'
+  package 'python-dev'
+  package 'libcurl4-openssl-dev'
+  package 'libunwind7-dev'
+  package 'libsasl2-2'
+  package 'libsasl2-dev'
+  package 'libcurl3'
+when 'rhel fedora centos' # todo fix this :-)
+  package 'default-jre-headless'
+  package 'default-jre'
+  package 'zookeeper-bin'
+  package 'zookeeperd'
+  package 'python-setuptools'
+  package 'python-dev'
+  package 'libcurl4-openssl-dev'
+  package 'libunwind7-dev'
+  package 'libsasl2-2'
+  package 'libsasl2-dev'
+  package 'libcurl3'
+end
 
 packageFile = "#{node.default.mesos.source.dir}/#{node.default.mesos.install.filename}"
 
