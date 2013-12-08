@@ -8,6 +8,7 @@
 #
 
 include_recipe 'apt::default'
+include_recipe 'chef-mesos'
 
 package 'curl'
 package 'wget'
@@ -94,30 +95,35 @@ directory node.mesos.source.dir do
 end
 
 
-case node.mesos.install.type
-when "pkg"
-  log "Installing via Package"
+def install
+  case node.mesos.install.type
+  when "pkg"
+    log "Installing via Package"
 
-  remote_file 'download_file' do
-    path packageFile
-    source node.default.mesos.install.pkg_url
-    # owner 'vagrant'
-    # group 'vagrant'
-    mode 00644
-    action :create_if_missing
-    notifies :install, "dpkg_package[mesos_deb]"
+    remote_file 'download_file' do
+      path packageFile
+      source node.default.mesos.install.pkg_url
+      # owner 'vagrant'
+      # group 'vagrant'
+      mode 00644
+      action :create_if_missing
+      notifies :install, "dpkg_package[mesos_deb]"
+    end
+
+  when "pkgsrc"
+    # not yet ready
+  when "src"
+    log "Installing via Package"
+
+    git node.mesos.source.dir do
+      repository node.mesos.source.repo
+      reference node.mesos.source.branch
+      action :sync
+      notifies :run, "bash[configure_mesos]"
+    end  
   end
+end
 
-when "pkgsrc"
-  # not yet ready
-when "src"
-  log "Installing via Package"
-
-  git node.mesos.source.dir do
-    repository node.mesos.source.repo
-    reference node.mesos.source.branch
-    action :sync
-    notifies :run, "bash[configure_mesos]"
-  end
-  
+chef_mesos_master "some" do
+  action :create
 end
