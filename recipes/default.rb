@@ -105,3 +105,13 @@ chef_mesos_master "mesos-master" do
   action :create
   only_if do node.mesos.install.mode == "master" end
 end
+
+chef_mesos_slave "mesos-slave" do
+  action :create
+  only_if do node.mesos.install.mode == "slave" end
+end
+
+chef_mesos_local "mesos-local" do
+  action :create
+  only_if do node.mesos.install.mode == "local" end
+end

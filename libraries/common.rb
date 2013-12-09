@@ -59,7 +59,7 @@ end
 def installMesos
   case node.mesos.install.via
   when "pkg"
-    log "Installing via Package"
+    log "Installing via remote package..."
 
     remote_file 'download_file' do
       path packageFile
@@ -69,6 +69,13 @@ def installMesos
       mode 00644
       action :create_if_missing
       notifies :install, "dpkg_package[mesos_deb]"
+    end
+  when "pkg_local"
+    log "Installing via local package..."
+    
+    if File.exists? default['mesos']['install']['pkg_local']
+      # Chef::Provider::dpkg_package
+      # TODO: finish here
     end
 
   when "pkgsrc"

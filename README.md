@@ -5,6 +5,9 @@ Mesos chef cookbook.
 
 Warning: This repo is not yet stable.
 
+Note: There is a lot of raw ruby that will be moved to both blocks and 
+      lwrp directives. Maybe you can help out!? :-)
+
 
 Requirements
 ------------
@@ -16,7 +19,11 @@ e.g.
 
 Attributes
 ----------
-TODO: List you cookbook attributes here.
+
+Install from package local. Note, that it will fall back to remote if local
+doesn't exist.
+
+    default['mesos']['install']['pkg_local']
 
 e.g.
 #### chef-mesos::default

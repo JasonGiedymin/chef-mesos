@@ -6,7 +6,7 @@ end
 action :create do
   sayHello
   stopMesos :other
-  beginInstall :master
+  beginInstall :local
 end
 
 action :create_if_missing do
@@ -16,4 +16,6 @@ end
 action :update do
 
 end
+
+
 
