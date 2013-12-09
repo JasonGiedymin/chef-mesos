@@ -43,9 +43,15 @@ when 'rhel fedora centos' # todo fix this :-)
 end
 
 packageFile = "#{node.default.mesos.source.dir}/#{node.default.mesos.install.filename}"
+localFile = node.default.mesos.install.pkg_local
 
 dpkg_package "mesos_deb" do
   package_name packageFile
+  action :nothing
+end
+
+dpkg_package "mesos_deb_local" do
+  package_name localFile
   action :nothing
 end
 
@@ -95,35 +101,7 @@ directory node.mesos.source.dir do
 end
 
 
-def install
-  case node.mesos.install.type
-  when "pkg"
-    log "Installing via Package"
-
-    remote_file 'download_file' do
-      path packageFile
-      source node.default.mesos.install.pkg_url
-      # owner 'vagrant'
-      # group 'vagrant'
-      mode 00644
-      action :create_if_missing
-      notifies :install, "dpkg_package[mesos_deb]"
-    end
-
-  when "pkgsrc"
-    # not yet ready
-  when "src"
-    log "Installing via Package"
-
-    git node.mesos.source.dir do
-      repository node.mesos.source.repo
-      reference node.mesos.source.branch
-      action :sync
-      notifies :run, "bash[configure_mesos]"
-    end  
-  end
-end
-
-chef_mesos_master "some" do
+chef_mesos_master "mesos-master" do
   action :create
+  only_if do node.mesos.install.mode == "master" end
 end
