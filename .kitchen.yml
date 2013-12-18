@@ -16,33 +16,34 @@ platforms:
       box_url: /Users/jason/programming/github/collective/base_boxes/precise64.box
 
 suites:
-  - name: pkg_net
-    run_list:
-      - recipe[chef-mesos::default]
-    attributes:
-      mesos:
-        install:
-          mode: local
-          via: pkg
-
-  # - name: pkg_local
+  # - name: pkg_net
   #   run_list:
   #     - recipe[chef-mesos::default]
   #   attributes:
   #     mesos:
   #       install:
   #         mode: local
-  #         via: pkg_local
+  #         via: pkg
 
-  - name: pkg_net_force
+  - name: pkg_local
     run_list:
       - recipe[chef-mesos::default]
     attributes:
       mesos:
         install:
           mode: local
-          via: pkg
-          force: true
+          via: pkg_local
+          resolve: true
+
+  # - name: pkg_net_force
+  #   run_list:
+  #     - recipe[chef-mesos::default]
+  #   attributes:
+  #     mesos:
+  #       install:
+  #         mode: local
+  #         via: pkg
+  #         force: true
 
   # - name: pkg_local_force
   #   run_list:

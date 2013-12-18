@@ -6,11 +6,12 @@ case node[:platform]
 end
 
 # == misc attribs ==
-default['mesos']['install']['force']         = false # force the install
+default['mesos']['install']['force']         = false # force the re-install
+default['mesos']['install']['resolve']       = false # if local cannot be found, we go out to the net (see below uri)
 
 # where mesos will be installed
 default['mesos']['install']['prefix']        = '/usr/local/sbin'
-default['mesos']['install']['local_prefix']        = '/usr/local/bin'
+default['mesos']['install']['local_prefix']  = '/usr/local/bin'
 
 # below is for reference, this cookbook doesn't use this, but others do.
 # Knowing about it helps us.
@@ -31,3 +32,10 @@ default['mesos']['install']['pkg_local']     = "/tmp/#{node[:mesos][:install][:f
 default['mesos']['source']['dir']            = "#{Chef::Config[:file_cache_path]}/mesos" # temporary dir to unpack/compile
 default['mesos']['source']['repo']           = 'https://git-wip-us.apache.org/repos/asf/mesos.git'
 default['mesos']['source']['branch']         = 'master' # git branch to compile from
+
+# == conf file settings ==
+default[:mesos][:conf][:log_location]        = '/var/log/mesos'
+default[:mesos][:conf][:ulimit]              = '-n 8192'
+default[:mesos][:conf][:zookeepers]          = "zk://#{node[:fqdn]}:2181/mesos" # used by masters to find zookeeper
+default[:mesos][:conf][:masters]             = "zk://#{node[:fqdn]}:2181/mesos" # used by slaves
+default[:mesos][:conf][:options]             = "--log_dir=$LOGS"

@@ -66,26 +66,26 @@ def mesosExists?(mode=:local)
   File.exists?(mesos_file)
 end
 
+def installPkg
+  log "Installing via remote package..."
+
+  remote_file 'download_file' do
+    path packageFile :remote
+    source node.default.mesos.install.pkg_url
+    # owner 'vagrant'
+    # group 'vagrant'
+    # mode 00644
+    action :create_if_missing
+    notifies :install, "dpkg_package[mesos_deb]"
+  end
+end
+
 def installMesos
-  case node.mesos.install.via
+  mode = node.mesos.install.via
+
+  case mode
   when "pkg"
-    log "Installing via remote package..."
-
-    remote_file 'download_file' do
-      path packageFile :remote
-      source node.default.mesos.install.pkg_url
-      # owner 'vagrant'
-      # group 'vagrant'
-      # mode 00644
-      action :create_if_missing
-      notifies :install, "dpkg_package[mesos_deb]"
-    end
-
-    # dpkg_package "mesos_deb" do
-    #   action :install
-    #   only_if do File.exists? packageFile :remote end
-    # end
-    
+    installPkg
   when "pkg_local"
     log "Installing via local package..."
 
@@ -97,8 +97,14 @@ def installMesos
         only_if do File.exists? packageFile :local end
       end
     else
-      log "Could not find package file, going out to the internet..."
-      installMesos :pkg
+      # log "Resolve set to: #{node.mesos.install.resolve}"
+
+      if node.mesos.install.resolve
+        log "Resolve set, will try to install with remote package..."
+        installPkg
+      else
+        fatal "Could not find package file, resolve not set, nothing to do. Raising exception."
+      end
     end
 
   when "src"
