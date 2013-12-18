@@ -4,6 +4,7 @@ driver_config:
   require_chef_omnibus: true
   customize:
     memory: 512
+    cpus: 3
 
 provisioner:
   name: chef_solo
@@ -15,46 +16,42 @@ platforms:
       box_url: /Users/jason/programming/github/collective/base_boxes/precise64.box
 
 suites:
-  - name: default
+  - name: pkg_net
     run_list:
       - recipe[chef-mesos::default]
     attributes:
       mesos:
         install:
-          from_package: true
+          mode: local
+          via: pkg
 
-# Test with custom location
-# suites:
-#   - name: default
-#     run_list:
-#       - recipe[chef-mesos::default]
-#     attributes:
+  # - name: pkg_local
+  #   run_list:
+  #     - recipe[chef-mesos::default]
+  #   attributes:
+  #     mesos:
+  #       install:
+  #         mode: local
+  #         via: pkg_local
 
-# Test with source
-# suites:
-#   - name: default
-#     run_list:
-#       - recipe[chef-mesos::default]
-#     attributes:
+  - name: pkg_net_force
+    run_list:
+      - recipe[chef-mesos::default]
+    attributes:
+      mesos:
+        install:
+          mode: local
+          via: pkg
+          force: true
 
-# Test with deb package
-# suites:
-#   - name: default
-#     run_list:
-#       - recipe[chef-mesos::default]
-#     attributes:
+  # - name: pkg_local_force
+  #   run_list:
+  #     - recipe[chef-mesos::default]
+  #   attributes:
+  #     mesos:
+  #       install:
+  #         mode: local
+  #         via: pkg_local
+  #         force: true
 
-# Test with master only
-# suites:
-#   - name: default
-#     run_list:
-#       - recipe[chef-mesos::default]
-#     attributes:
-
-# Test with slave only
-# suites:
-#   - name: default
-#     run_list:
-#       - recipe[chef-mesos::default]
-#     attributes:
 

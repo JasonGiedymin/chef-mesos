@@ -5,42 +5,38 @@ Mesos chef cookbook.
 
 Warning: This repo is not yet stable.
 
-Note: There is a lot of raw ruby that will be moved to both blocks and 
-      lwrp directives. Maybe you can help out!? :-)
-
 
 Requirements
 ------------
-TODO
 
-e.g.
-#### packages
-- `toaster` - chef-mesos needs toaster to brown your bagel.
+- `apt`
+- `yum`
+- `build-essential`
+- `java`
+- `ark`
+
+
 
 Attributes
 ----------
 
-Install from package local. Note, that it will fall back to remote if local
-doesn't exist.
+The following attributes are important:
 
-    default['mesos']['install']['pkg_local']
+    # == misc attribs ==
+    default['mesos']['install']['force']         = false # force the install
 
-e.g.
-#### chef-mesos::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['chef-mesos']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+    # == packaging ==
+    default['mesos']['install']['mode']          = "local" # {master|slave|local}
+    default['mesos']['install']['via']           = "pkg" # {src|pkg_local|pkg} TODO: handle pkg_local
+    default['mesos']['install']['pkg_ver']       = '0.14.2'
+    default['mesos']['install']['pkg_arch']      = 'amd64'
+    default['mesos']['install']['pkg_url']       # the url of the package file
+    default['mesos']['install']['pkg_local']     = false # install local file system package {true|false}
+
+    # == compile ==
+    default['mesos']['source']['repo']           = 'https://git-wip-us.apache.org/repos/asf/mesos.git'
+    default['mesos']['source']['branch']         = 'master' # git branch to compile from
+
 
 Usage
 -----
@@ -59,6 +55,7 @@ Just include `chef-mesos` in your node's `run_list`:
 }
 ```
 
+
 Contributing
 ------------
 
@@ -71,4 +68,6 @@ Contributing
 
 License and Authors
 -------------------
-Authors: Jason Giedymin
+Authors: 
+
+- Jason Giedymin

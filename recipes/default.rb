@@ -8,7 +8,7 @@
 #
 
 include_recipe 'apt::default'
-include_recipe 'chef-mesos'
+include_recipe 'java'
 
 package 'curl'
 package 'wget'
@@ -16,9 +16,11 @@ package 'g++'
 package 'gcc'
 
 case node['platform_family']
-when 'debian ubuntu'
-  package 'default-jre-headless'
-  package 'default-jre'
+when 'debian','ubuntu'
+  # package 'openjdk-7-jre-headless'
+  # package 'openjdk-7-jre-lib'
+  # package 'openjdk-7-jre'
+  # package 'openjdk-7-jdk'
   package 'zookeeper-bin'
   package 'zookeeperd'
   package 'python-setuptools'
@@ -28,9 +30,12 @@ when 'debian ubuntu'
   package 'libsasl2-2'
   package 'libsasl2-dev'
   package 'libcurl3'
-when 'rhel fedora centos' # todo fix this :-)
-  package 'default-jre-headless'
-  package 'default-jre'
+when 'rhel','fedora','centos' # todo fix this :-)
+  # package 'openjdk-7-jre-headless'
+  # package 'openjdk-7-jre-lib'
+  # package 'openjdk-7-jre'
+  # package 'openjdk-7-jdk'
+  # package 'openjdk-7-jdk'
   package 'zookeeper-bin'
   package 'zookeeperd'
   package 'python-setuptools'

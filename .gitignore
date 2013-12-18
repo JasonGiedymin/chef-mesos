@@ -10,6 +10,8 @@
 .kitchen.local.yml
 Berksfile.lock
 Gemfile.lock
+*.sublime-project
+*.sublime-workspace
 
 .bundle/
 .cache/

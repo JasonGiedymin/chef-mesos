@@ -6,6 +6,7 @@ end
 action :create do
   sayHello
   stopMesos :other
+  stopMesos :local
   beginInstall :local
 end
 

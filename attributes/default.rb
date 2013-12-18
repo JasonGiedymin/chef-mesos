@@ -10,6 +10,7 @@ default['mesos']['install']['force']         = false # force the install
 
 # where mesos will be installed
 default['mesos']['install']['prefix']        = '/usr/local/sbin'
+default['mesos']['install']['local_prefix']        = '/usr/local/bin'
 
 # below is for reference, this cookbook doesn't use this, but others do.
 # Knowing about it helps us.
@@ -18,8 +19,8 @@ default['mesos']['install']['master_script'] = 'mesos-master'
 default['mesos']['install']['slave_script']  = 'mesos-slave'
 
 # == packaging ==
-default['mesos']['install']['mode']          = "master" # {master|slave|local}
-default['mesos']['install']['via']           = "pkg" # {src|pkg_local|pkg|pkgsrc} TODO: handle pkg_local
+default['mesos']['install']['mode']          = "local" # {master|slave|local}
+default['mesos']['install']['via']           = "pkg" # {src|pkg_local|pkg} TODO: handle pkg_local
 default['mesos']['install']['pkg_ver']       = '0.14.2'
 default['mesos']['install']['pkg_arch']      = 'amd64' # right now that is all you get
 default['mesos']['install']['filename']      = "mesos_#{default[:mesos][:install][:pkg_ver]}_#{default[:mesos][:install][:pkg_arch]}.#{default[:mesos][:package_format]}"

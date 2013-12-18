@@ -1,5 +1,10 @@
-def packageFile
-  "#{node.default.mesos.source.dir}/#{node.default.mesos.install.filename}"
+def packageFile(mode)
+  case mode
+  when :local
+    node.default.mesos.install.pkg_local
+  when :remote
+    "#{node.default.mesos.source.dir}/#{node.default.mesos.install.filename}"
+  end
 end
 
 def sayHello
@@ -38,14 +43,17 @@ end
 # mode:{local|master|slave|other}
 def checkFile(mode=:local)
   prefix = node[:mesos][:install][:prefix]
+  local_prefix = node[:mesos][:install][:local_prefix]
+
+  log "Mesos prefix is: [#{prefix}], local prefix is: [#{local_prefix}]"
 
   case mode
   when :local
-    "#{prefix}/#{node['mesos']['install']['master_local']}"
+    "#{local_prefix}/#{node[:mesos][:install][:local_script]}"
   when :master
-    "#{prefix}/#{node['mesos']['install']['master_script']}"
+    "#{prefix}/#{node[:mesos][:install][:master_script]}"
   when :slave
-    "#{prefix}/#{node['mesos']['install']['slave_script']}"
+    "#{prefix}/#{node[:mesos][:install][:slave_script]}"
   else
     raise "Must supply 'mode' to check_file method"
   end
@@ -53,7 +61,9 @@ end
 
 # mode:{local|master|slave|other}
 def mesosExists?(mode=:local)
-  File.exists?(checkFile mode)
+  mesos_file = checkFile mode
+  log "using file: [#{mesos_file}]"
+  File.exists?(mesos_file)
 end
 
 def installMesos
@@ -62,24 +72,35 @@ def installMesos
     log "Installing via remote package..."
 
     remote_file 'download_file' do
-      path packageFile
+      path packageFile :remote
       source node.default.mesos.install.pkg_url
       # owner 'vagrant'
       # group 'vagrant'
-      mode 00644
+      # mode 00644
       action :create_if_missing
       notifies :install, "dpkg_package[mesos_deb]"
     end
+
+    # dpkg_package "mesos_deb" do
+    #   action :install
+    #   only_if do File.exists? packageFile :remote end
+    # end
+    
   when "pkg_local"
     log "Installing via local package..."
-    
-    if File.exists? default['mesos']['install']['pkg_local']
-      # Chef::Provider::dpkg_package
-      # TODO: finish here
+
+    if File.exists? packageFile :local
+      log "Local package file exists, using it for install..."
+
+      dpkg_package "mesos_deb_local" do
+        action :install
+        only_if do File.exists? packageFile :local end
+      end
+    else
+      log "Could not find package file, going out to the internet..."
+      installMesos :pkg
     end
 
-  when "pkgsrc"
-    # not yet ready
   when "src"
     log "Installing via Package"
 
@@ -94,13 +115,13 @@ end
 
 def beginInstall(mode)
   stopMesos mode
-
+  # TODO: move this into local.rb
   if mesosExists? mode
-    unless node.mesos.install.force
-      log "Seems mesos-#{mode} already exists - nothing to do."
-    else 
+    if node.mesos.install.force
       bannerLog "Force installing mesos."
       installMesos
+    else
+      log "Seems mesos-#{mode} already exists, not forcing - nothing to do."
     end
   else
     converge_by("Create mesos-#{mode}...") do
