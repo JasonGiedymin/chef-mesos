@@ -9,11 +9,11 @@ action :create do
   beginInstall :master
 end
 
-action :create_if_missing do
+# action :create_if_missing do
 
-end
+# end
 
-action :update do
+# action :update do
 
-end
+# end
 
