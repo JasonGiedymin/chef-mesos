@@ -13,17 +13,16 @@ platforms:
   - name: ubuntu-12.04
     driver_config:
       box: ubuntu-12.04
-      box_url: /Users/jason/programming/github/collective/base_boxes/precise64.box
 
 suites:
-  # - name: pkg_net
-  #   run_list:
-  #     - recipe[chef-mesos::default]
-  #   attributes:
-  #     mesos:
-  #       install:
-  #         mode: local
-  #         via: pkg
+  - name: pkg_net
+    run_list:
+      - recipe[chef-mesos::default]
+    attributes:
+      mesos:
+        install:
+          mode: local
+          via: pkg
 
   - name: pkg_local
     run_list:
@@ -35,24 +34,25 @@ suites:
           via: pkg_local
           resolve: true
 
-  # - name: pkg_net_force
-  #   run_list:
-  #     - recipe[chef-mesos::default]
-  #   attributes:
-  #     mesos:
-  #       install:
-  #         mode: local
-  #         via: pkg
-  #         force: true
+  - name: pkg_net_force
+    run_list:
+      - recipe[chef-mesos::default]
+    attributes:
+      mesos:
+        install:
+          mode: local
+          via: pkg
+          force: true
 
-  # - name: pkg_local_force
-  #   run_list:
-  #     - recipe[chef-mesos::default]
-  #   attributes:
-  #     mesos:
-  #       install:
-  #         mode: local
-  #         via: pkg_local
-  #         force: true
+  - name: pkg_local_force
+    run_list:
+      - recipe[chef-mesos::default]
+    attributes:
+      mesos:
+        install:
+          mode: local
+          via: pkg_local
+          force: true
+          resolve: true
 
 

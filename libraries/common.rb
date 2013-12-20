@@ -96,6 +96,39 @@ def installDefaultTemplate
   end
 end
 
+def installMasterConf
+  template "/etc/init/mesos-master.conf" do
+    source "mesos.erb"
+    mode 0440
+    owner "root"
+    group "root"
+    variables({
+       :log_location => node[:mesos][:conf][:log_location],
+       :ulimit => node[:mesos][:conf][:ulimit],
+       :zookeepers => node[:mesos][:conf][:zookeepers],
+       :masters => node[:mesos][:conf][:masters],
+       :options => node[:mesos][:conf][:options]
+    })
+  end
+end
+
+def installSlaveConf
+  template "/etc/init/mesos-slave.conf" do
+    source "mesos.erb"
+    mode 0440
+    owner "root"
+    group "root"
+    variables({
+       :log_location => node[:mesos][:conf][:log_location],
+       :ulimit => node[:mesos][:conf][:ulimit],
+       :zookeepers => node[:mesos][:conf][:zookeepers],
+       :masters => node[:mesos][:conf][:masters],
+       :options => node[:mesos][:conf][:options]
+    })
+  end
+end
+
+
 # def installTemplates(mode)
 #   case mode
 #   when :master
@@ -159,6 +192,8 @@ def beginInstall(mode)
       bannerLog "Force installing mesos."
       installMesos
       installDefaultTemplate
+      installMasterConf
+      installSlaveConf
     else
       log "Seems mesos-#{mode} already exists, not forcing - nothing to do."
     end
@@ -167,6 +202,8 @@ def beginInstall(mode)
       bannerLog "Installing mesos."
       installMesos
       installDefaultTemplate
+      installMasterConf
+      installSlaveConf
     end
   end
 end
