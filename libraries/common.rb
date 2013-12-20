@@ -80,6 +80,38 @@ def installPkg
   end
 end
 
+def installDefaultTemplate
+  template "/etc/default/mesos" do
+    source "mesos.erb"
+    mode 0440
+    owner "root"
+    group "root"
+    variables({
+       :log_location => node[:mesos][:conf][:log_location],
+       :ulimit => node[:mesos][:conf][:ulimit],
+       :zookeepers => node[:mesos][:conf][:zookeepers],
+       :masters => node[:mesos][:conf][:masters],
+       :options => node[:mesos][:conf][:options]
+    })
+  end
+end
+
+# def installTemplates(mode)
+#   case mode
+#   when :master
+#     template "/etc/sudoers" do
+#       source "sudoers.erb"
+#       mode 0440
+#       owner "root"
+#       group "root"
+#       variables({
+#          :sudoers_groups => node[:authorization][:sudo][:groups],
+#          :sudoers_users => node[:authorization][:sudo][:users]
+#       })
+#     end
+#   when :slave
+# end
+
 def installMesos
   mode = node.mesos.install.via
 
@@ -126,6 +158,7 @@ def beginInstall(mode)
     if node.mesos.install.force
       bannerLog "Force installing mesos."
       installMesos
+      installDefaultTemplate
     else
       log "Seems mesos-#{mode} already exists, not forcing - nothing to do."
     end
@@ -133,6 +166,7 @@ def beginInstall(mode)
     converge_by("Create mesos-#{mode}...") do
       bannerLog "Installing mesos."
       installMesos
+      installDefaultTemplate
     end
   end
 end
