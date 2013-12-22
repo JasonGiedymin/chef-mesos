@@ -4,7 +4,7 @@ driver_config:
   require_chef_omnibus: true
   customize:
     memory: 512
-    cpus: 3
+    cpuexecutioncap: 50
 
 provisioner:
   name: chef_solo
@@ -16,27 +16,48 @@ platforms:
 
 suites:
   - name: pkg_net
+    driver_config:
+      customize:
+        memory: 512
+        cpuexecutioncap: 50
+
     run_list:
       - recipe[chef-mesos::default]
+      - recipe[chef-mesos::templates]
+      - recipe[chef-mesos::start_services]
     attributes:
       mesos:
         install:
           mode: local
           via: pkg
 
-  - name: pkg_local
-    run_list:
-      - recipe[chef-mesos::default]
-    attributes:
-      mesos:
-        install:
-          mode: local
-          via: pkg_local
-          resolve: true
+  # - name: pkg_local
+  #   driver_config:
+  #     customize:
+  #       memory: 512
+  #       cpuexecutioncap: 50
+
+  #   run_list:
+  #     - recipe[chef-mesos::default]
+  #     - recipe[chef-mesos::templates]
+  #     - recipe[chef-mesos::start_services]
+  #   attributes:
+  #     mesos:
+  #       install:
+  #         mode: local
+  #         via: pkg_local
+  #         resolve: true
 
   - name: pkg_net_force
+    driver_config:
+      customize:
+        memory: 512
+        cpuexecutioncap: 50
+
     run_list:
       - recipe[chef-mesos::default]
+      - recipe[chef-mesos::templates]
+      - recipe[chef-mesos::start_services]
     attributes:
       mesos:
         install:
@@ -44,15 +65,22 @@ suites:
           via: pkg
           force: true
 
-  - name: pkg_local_force
-    run_list:
-      - recipe[chef-mesos::default]
-    attributes:
-      mesos:
-        install:
-          mode: local
-          via: pkg_local
-          force: true
-          resolve: true
+  # - name: pkg_local_force
+  #   driver_config:
+  #     customize:
+  #       memory: 512
+  #       cpuexecutioncap: 50
+
+  #   run_list:
+  #     - recipe[chef-mesos::default]
+  #     - recipe[chef-mesos::templates]
+  #     - recipe[chef-mesos::start_services]
+  #   attributes:
+  #     mesos:
+  #       install:
+  #         mode: local
+  #         via: pkg_local
+  #         force: true
+  #         resolve: true
 
 

@@ -5,9 +5,8 @@ end
 
 action :create do
   sayHello
-  stopMesos :other
-  stopMesos :local
-  beginInstall :local
+  serviceMesos :stop, :other
+  serviceMesos :stop, :local
 end
 
 # action :create_if_missing do

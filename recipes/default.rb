@@ -47,21 +47,37 @@ when 'rhel','fedora','centos' # todo fix this :-)
   package 'libcurl3'
 end
 
-packageFile = "#{node.default.mesos.source.dir}/#{node.default.mesos.install.filename}"
-localFile = node.default.mesos.install.pkg_local
+def packageFile(mode)
+  case mode
+  when 'local'
+    node[:mesos][:install][:pkg_local]
+  when 'remote'
+    "#{node[:mesos][:source][:dir]}/#{node[:mesos][:install][:filename]}"
+  end
+end
+
+directory node[:mesos][:source][:dir] do
+  # owner "vagrant"
+  # group "vagrant"
+  mode 00644
+  action :create
+end
+
+localFile = node[:mesos][:install][:pkg_local]
 
 dpkg_package "mesos_deb" do
-  package_name packageFile
+  package_name packageFile 'remote'
   action :nothing
 end
 
 dpkg_package "mesos_deb_local" do
   package_name localFile
-  action :nothing
+  action :install
+  only_if do File.exists?(localFile) end
 end
 
 bash "configure_mesos" do
-  cwd node.mesos.source.dir
+  cwd node[:mesos][:source][:dir]
   code <<-EOH
     ./configure
   EOH
@@ -70,7 +86,7 @@ bash "configure_mesos" do
 end
 
 bash "compile_mesos" do
-  cwd node.mesos.source.dir
+  cwd node[:mesos][:source][:dir]
   code <<-EOH
     ./configure
     make clean
@@ -82,10 +98,9 @@ bash "compile_mesos" do
   notifies :run, "bash[install_mesos]"
 end
 
-
 # Separated so we one may debug if necessary
 bash "install_mesos" do
-  cwd node.mesos.source.dir
+  cwd node[:mesos][:source][:dir]
   code <<-EOH
     sudo make uninstall
     sudo make install
@@ -93,30 +108,38 @@ bash "install_mesos" do
   action :nothing
 end
 
+remote_file 'download_file' do
+  path packageFile 'remote'
+  source node[:mesos][:install][:pkg_url]
+  action :create_if_missing
+  notifies :install, "dpkg_package[mesos_deb]", :immediately
+  only_if do node[:mesos][:install][:via] == 'pkg' end
+end
 
-#
-# Start
-#
-
-directory node.mesos.source.dir do
-  # owner "vagrant"
-  # group "vagrant"
-  mode 00644
-  action :create
+git node[:mesos][:source][:dir] do
+  repository node[:mesos][:source][:repo]
+  reference node[:mesos][:source][:branch]
+  action :sync
+  notifies :run, "bash[configure_mesos]"
+  only_if do node[:mesos][:install][:via] == :src end
 end
 
 
+#
+# Recipes
+#
+
 chef_mesos_master "mesos-master" do
   action :create
-  only_if do node.mesos.install.mode == "master" end
+  only_if do node[:mesos][:install][:mode] == 'master' end
 end
 
 chef_mesos_slave "mesos-slave" do
   action :create
-  only_if do node.mesos.install.mode == "slave" end
+  only_if do node[:mesos][:install][:mode] == 'slave' end
 end
 
 chef_mesos_local "mesos-local" do
   action :create
-  only_if do node.mesos.install.mode == "local" end
+  only_if do node[:mesos][:install][:mode] == 'local' end
 end

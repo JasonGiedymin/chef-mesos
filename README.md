@@ -3,7 +3,7 @@ chef-mesos Cookbook
 
 Mesos chef cookbook.
 
-Warning: This repo is not yet stable.
+Warning: This repo is not yet stable and is a complete mess.
 
 
 Requirements
