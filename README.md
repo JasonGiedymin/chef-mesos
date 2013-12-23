@@ -1,38 +1,42 @@
 chef-mesos Cookbook
 ===================
-TODO: Enter the cookbook description here.
 
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+Mesos chef cookbook.
+
+Warning: This repo is not yet stable and is a complete mess.
+
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
 
-e.g.
-#### packages
-- `toaster` - chef-mesos needs toaster to brown your bagel.
+- `apt`
+- `yum`
+- `build-essential`
+- `java`
+- `ark`
+
+
 
 Attributes
 ----------
-TODO: List you cookbook attributes here.
 
-e.g.
-#### chef-mesos::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['chef-mesos']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+The following attributes are important:
+
+    # == misc attribs ==
+    default['mesos']['install']['force']         = false # force the install
+
+    # == packaging ==
+    default['mesos']['install']['mode']          = "local" # {master|slave|local}
+    default['mesos']['install']['via']           = "pkg" # {src|pkg_local|pkg} TODO: handle pkg_local
+    default['mesos']['install']['pkg_ver']       = '0.14.2'
+    default['mesos']['install']['pkg_arch']      = 'amd64'
+    default['mesos']['install']['pkg_url']       # the url of the package file
+    default['mesos']['install']['pkg_local']     = false # install local file system package {true|false}
+
+    # == compile ==
+    default['mesos']['source']['repo']           = 'https://git-wip-us.apache.org/repos/asf/mesos.git'
+    default['mesos']['source']['branch']         = 'master' # git branch to compile from
+
 
 Usage
 -----
@@ -51,11 +55,10 @@ Just include `chef-mesos` in your node's `run_list`:
 }
 ```
 
+
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
 
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
@@ -65,4 +68,6 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: 
+
+- Jason Giedymin
