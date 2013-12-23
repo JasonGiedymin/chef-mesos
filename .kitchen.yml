@@ -11,8 +11,6 @@ provisioner:
 
 platforms:
   - name: ubuntu-12.04
-    driver_config:
-      box: ubuntu-12.04
 
 suites:
   - name: pkg_net
@@ -52,7 +50,7 @@ suites:
     driver_config:
       customize:
         memory: 512
-        cpuexecutioncap: 50
+        cpuexecutioncap: 30
 
     run_list:
       - recipe[chef-mesos::default]
