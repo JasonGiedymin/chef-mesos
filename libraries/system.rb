@@ -1,11 +1,13 @@
+# encoding: UTF-8
+
 def version
-  "0.1.0"
+  '0.1.0'
 end
 
-def bannerLog(msg="CHEF-MESOS")
-  Chef::Log.info "==================================="
+def banner_log(msg = 'CHEF-MESOS')
+  Chef::Log.info '==================================='
   Chef::Log.info "          #{msg}                   "
-  Chef::Log.info "==================================="
+  Chef::Log.info '==================================='
 end
 
 def log(msg)

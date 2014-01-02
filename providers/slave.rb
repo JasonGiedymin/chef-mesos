@@ -1,20 +1,10 @@
+# encoding: UTF-8
+
 def whyrun_supported?
   true
 end
 
-
 action :create do
-  sayHello
-  serviceMesos :stop, :other
+  say_hello
+  new_resource.updated_by_last_action(true)
 end
-
-# action :create_if_missing do
-
-# end
-
-# action :update do
-
-# end
-
-
-
