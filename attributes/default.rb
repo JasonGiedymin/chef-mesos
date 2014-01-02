@@ -38,8 +38,8 @@ default['mesos']['source']['repo']           = 'https://git-wip-us.apache.org/re
 default['mesos']['source']['branch']         = 'master' # git branch to compile from
 
 # == conf file settings ==
-default['mesos']['conf']['log_location']        = '/var/log/mesos'
-default['mesos']['conf']['ulimit']              = '-n 8192'
-default['mesos']['conf']['zookeepers']          = "zk://#{node['fqdn']}:2181/mesos" # used by masters to find zookeeper
-default['mesos']['conf']['masters']             = "zk://#{node['fqdn']}:2181/mesos" # used by slaves
-default['mesos']['conf']['options']             = '--log_dir=$LOGS'
+default['mesos']['conf']['log_location']     = '/var/log/mesos'
+default['mesos']['conf']['ulimit']           = '-n 8192'
+default['mesos']['conf']['zookeepers']       = "zk://#{node['fqdn']}:2181/mesos" # used by masters to find zookeeper
+default['mesos']['conf']['masters']          = "zk://#{node['fqdn']}:2181/mesos" # used by slaves
+default['mesos']['conf']['options']          = '--log_dir=$LOGS'
