@@ -1,6 +1,10 @@
 chef-mesos Cookbook
 ===================
 
+
+[![Build Status](https://travis-ci.org/JasonGiedymin/chef-mesos.png?branch=master)](https://travis-ci.org/JasonGiedymin/chef-mesos)
+
+
 Mesos chef cookbook.
 
 Warning: This repo is not yet stable and is a complete mess.
