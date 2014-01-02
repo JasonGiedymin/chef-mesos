@@ -1,4 +1,3 @@
-# Keep it simple for the attribs file
-# though it requires a longer length
-LineLength:
-  Max: 180
+AllCops:
+  Excludes:
+    - attributes/**

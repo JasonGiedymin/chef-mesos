@@ -1,7 +1,7 @@
 # encoding: UTF-8
 
 def version
-  '0.1.1'
+  '0.1.2'
 end
 
 def banner_log(msg = 'CHEF-MESOS')

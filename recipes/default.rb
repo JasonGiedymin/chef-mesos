@@ -1,5 +1,8 @@
 # encoding: UTF-8
 
+via = node['mesos']['install']['via']
+pkg_local = node['mesos']['install']['pkg_local']
+
 include_recipe 'apt::default'
 include_recipe 'java'
 
@@ -72,7 +75,7 @@ end
 dpkg_package 'mesos_deb_local' do
   package_name node['mesos']['install']['pkg_local']
   action :install
-  only_if { node['mesos']['install']['via'] == 'pkg_local' && File.exists?(node['mesos']['install']['pkg_local']) }
+  only_if { via == 'pkg_local' && File.exists?(pkg_local) }
 end
 
 bash 'configure_mesos' do
