@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 name             'chef-mesos'
 maintainer       'Jason Giedymin'
 maintainer_email 'jasong@apache.org'

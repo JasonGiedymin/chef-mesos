@@ -1,11 +1,5 @@
 # encoding: UTF-8
 
-# def install_mode
-#   mode = node['mesos']['install']['mode']
-#   log "install mode is: #{mode}"
-#   mode
-# end
-
 # services_start
 
 service 'mesos-local' do # Nope, kill it for good
@@ -37,7 +31,7 @@ service 'zookeeper' do
   end
 
   supports status: true, start: true, stop: true, restart: true
-  action :restart
+  action :stop
 end
 
 service 'mesos-master' do # All us
@@ -48,7 +42,7 @@ service 'mesos-master' do # All us
 
   supports status: true, start: true, stop: true, restart: true
   only_if { ![:master, :local].find { |x| x.to_s == install_mode }.nil? }
-  action :restart
+  action :stop
 end
 
 service 'mesos-slave' do # All us
@@ -59,5 +53,5 @@ service 'mesos-slave' do # All us
 
   supports status: true, start: true, stop: true, restart: true
   only_if { ![:slave, :local].find { |x| x.to_s == install_mode }.nil? }
-  action :restart
+  action :stop
 end
